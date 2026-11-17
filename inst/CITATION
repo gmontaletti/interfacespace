@@ -7,9 +7,10 @@ bibentry(
   year = "2026",
   note = "R package version 0.1.0",
   url = "https://github.com/gmontaletti/interfacespace",
+  doi = "10.5281/zenodo.24306874",
   textVersion = paste(
     "Montaletti, G. (2026). interfacespace: Registers of joint",
     "qualitative-quantitative claims (Version 0.1.0) [R package].",
-    "https://github.com/gmontaletti/interfacespace"
+    "Zenodo. https://doi.org/10.5281/zenodo.24306874"
   )
 )

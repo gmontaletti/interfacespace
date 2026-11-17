@@ -78,8 +78,9 @@ text of any study is distributed. A data dictionary is in
 
 Montaletti, G. (2026). interfacespace: Registers of joint
 qualitative-quantitative claims (Version 0.1.0) [R package].
-https://github.com/gmontaletti/interfacespace (DOI to be added after the
-Zenodo release)
+Zenodo. https://doi.org/10.5281/zenodo.24306874
+
+All versions (concept DOI): https://doi.org/10.5281/zenodo.24306873
 
 ```bibtex
 @Manual{montaletti2026interfacespace,
@@ -88,5 +89,6 @@ Zenodo release)
   year   = {2026},
   note   = {R package version 0.1.0},
   url    = {https://github.com/gmontaletti/interfacespace},
+  doi    = {10.5281/zenodo.24306874},
 }
 ```
