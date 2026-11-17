@@ -1,0 +1,15 @@
+bibentry(
+  bibtype = "Manual",
+  title = "interfacespace: Registers of joint qualitative-quantitative claims",
+  author = person("Giampaolo", "Montaletti",
+                  email = "giampaolo.montaletti@gmail.com",
+                  comment = c(ORCID = "0009-0002-5327-1122")),
+  year = "2026",
+  note = "R package version 0.1.0",
+  url = "https://github.com/gmontaletti/interfacespace",
+  textVersion = paste(
+    "Montaletti, G. (2026). interfacespace: Registers of joint",
+    "qualitative-quantitative claims (Version 0.1.0) [R package].",
+    "https://github.com/gmontaletti/interfacespace"
+  )
+)

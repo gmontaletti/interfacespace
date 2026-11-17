@@ -1,0 +1,8 @@
+"code","from","relation","to","basis","proposed_by","status"
+"R1","C1","covers","C2","abstract Results p.60: 'Relational coordination scores varied according to the focus of the service; clinical services had significantly lower levels' (semicolon specifies the general result)","A2","endorsed"
+"R2","C1","covers","C3","abstract Conclusion p.60: 'The relational coordination of services varied significantly according to the focus of the service. Population-focused public health services had higher levels' (second sentence specifies the first)","A2","endorsed"
+"R3","C8","covers","C6","Rule 2: abstract Conclusion p.60 restates the Results facilitators ('such as purposive cross-service meetings and organizational culture')","A2","endorsed"
+"R4","C8","covers","C7","Rule 2: abstract Conclusion p.60 'facilitated and impeded by' restates Results facilitators and barriers","A2","endorsed"
+"R5","C9","covers","C16","Rule 2: abstract Practice Implications p.61 'deliberate support from senior management' summarises p.70 'deliberate action to publicly prioritize collaboration'","A2","endorsed"
+"R6","C9","covers","C17","Rule 2: abstract Practice Implications p.61 summarises p.70-71 'purposive, cross-programmatic meetings were initiated with a supportive infrastructure'","A2","endorsed"
+"R7","C10","covers","C17","abstract 'structured activities to increase shared knowledge and mutual respect' (p.61); cloud meetings 'provided an opportunity for problem-solving communication, shared knowledge, and mutual respect' (p.64)","A2","rejected"

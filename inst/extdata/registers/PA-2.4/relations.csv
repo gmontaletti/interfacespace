@@ -1,0 +1,7 @@
+"code","from","relation","to","basis","proposed_by","status"
+"R1","C4","backs","C5","p.149 'The value of an inquiry into other relational forms is confirmed by the finding that [...] only half involve contractual agreements.'","A2","endorsed"
+"R2","C10","backs","C9","p.150 'Little evidence is found here that loss of formality equals loss of control. This study finds that public managers have a broader range of tools at their disposal to influence partnership outcomes'","A2","rejected"
+"R3","C13","covers","C14","p.150 'This study finds less evidence of ""collaborative"" partnerships. Most government-nonprofit relationships in this sample lack a key ingredient of collaboration: shared decision making.' (rule 2)","A2","rejected"
+"R4","C15","covers","C14","p.150 'In short, few of these partnerships can be described as partnerships between equals.' (rule 2)","A2","rejected"
+"R5","C21","backs","C22","p.151 'The interviews offered interesting data [...] but they are preliminary at best: A larger qualitative study [...] would be beneficial'","A2","rejected"
+"R6","C26","covers","C14","p.150 This study finds less evidence of ""collaborative"" partnerships. Most government-nonprofit relationships in this sample lack a key ingredient of collaboration: shared decision making. In short, few of these partnerships can be described as partnerships between equals. (rule 2 / rule 4: C14 narrows C26; replaces R3, R4)","A3","endorsed"

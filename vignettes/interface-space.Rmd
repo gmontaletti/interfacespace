@@ -1,0 +1,130 @@
+---
+title: "The interface space"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{The interface space}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(collapse = TRUE, comment = "#>")
+library(interfacespace)
+```
+
+## 1. The workbook in brief
+
+A mixed methods evaluation produces findings from qualitative work (strand
+`Q`) and from numbers (strand `N`), and states claims that join them. The
+interface space keeps what was found, what is claimed and what was decided in
+separate tables, with the links between them written down:
+
+| Table | Content |
+|---|---|
+| agents | who did the work: persons, models, algorithms |
+| findings | one checkable result per row, with strand and where to check it |
+| transformations | a finding made from other findings (counting a theme, comparing themes across groups defined by a measure) |
+| claims | headline claims, with the findings they rest on and the fit of the strands (`confirm`, `expand`, `discord`, `single-strand`) |
+| relations | links among claims: `backs`, `clashes`, `covers` |
+| decisions | endorse or reject, with actor, date, rows and a written reason |
+
+Four rules govern the tables.
+
+1. Every row is born a candidate. Status changes only through decisions.
+2. A decision needs a person as actor and a written reason. Decisions are
+   never edited or deleted; a later decision on the same row supersedes an
+   earlier one.
+3. A row proposed by a model enters as a candidate and cannot be endorsed in
+   the call that creates it.
+4. Endorsing means accepting a row as correctly recorded. Whether a claim is
+   joint is computed, not decided: a claim is joint when its findings, traced
+   back through endorsed transformations to their roots, include at least one
+   `Q` and one `N` root.
+
+A transformation passes on the roots of its inputs, so a theme plus the
+percentage computed from that same theme has one root, not two. The
+exception is coding rule 12: when qualitative data are compared across groups
+defined by a quantitative measure, the output finding is a root of its own
+strand as well (`partition = TRUE`).
+
+```{r synthetic}
+x <- InterfaceSpace$new("example")
+x$add_agent("A1", "Analyst", "person", "Author of the decisions")
+x$add_agent("A2", "LLM extractor", "model", "model x, prompt v1")
+x$add_finding("F1", "Q", "Participants report growing confidence.",
+              where_to_check = "Interviews, p. 7", proposed_by = "A2")
+x$add_finding("F2", "N", "Confidence theme present in 68% of interviews.",
+              where_to_check = "Table 3", proposed_by = "A2")
+x$add_finding("F3", "N", "Career adaptability rises, d = 0.45.",
+              where_to_check = "CAAS scale, T0-T2", proposed_by = "A2")
+x$add_transformation("F2", made_from = "F1", method = "theme counted",
+                     done_by = "A1", proposed_by = "A2")
+x$propose_claim("C1", "Coaching raises confidence.",
+                rests_on = c("F1", "F2"), fit = "confirm", proposed_by = "A2")
+x$propose_claim("C2", "Coaching raises confidence and adaptability.",
+                rests_on = c("F1", "F3"), fit = "confirm", proposed_by = "A2")
+x$decide(c("F1", "F2", "F3", "T:F2", "C1", "C2"), "endorse", actor = "A1",
+         reason = "Recorded as stated in the report.")
+x$claims()[, .(code, rests_on, fit, status, joint)]
+x$roots()
+```
+
+`C1` looks mixed but has one root (`F1`); `C2` is joint.
+
+## 2. A published register: Woodall et al. (2018)
+
+The package ships the registers of ten published evaluations. The register
+of Woodall et al. (2018), a social prescribing service evaluated with a
+pre/post questionnaire and interviews (study `HLT-C2`), is read with
+`read_register()`, which adds every row as a candidate and replays the
+decision log in order.
+
+```{r read}
+hlt <- read_register(bundled_registers("HLT-C2"))
+hlt
+head(hlt$decisions()[, .(code, action, rows, reason)], 4)
+```
+
+### Joint claims
+
+```{r joint}
+cl <- hlt$claims("endorsed")
+cl[, .N, by = .(joint, fit)]
+cl[joint == TRUE, .(code, claim, rests_on, fit)]
+```
+
+### Joint display
+
+For each joint claim, the qualitative and quantitative roots side by side.
+
+```{r display}
+jd <- hlt$joint_display()
+knitr::kable(jd[, .(claim, q_findings, n_findings, fit)])
+```
+
+### Counts
+
+Counts use endorsed rows only.
+
+```{r counts}
+hlt$counts()[, .(claims, joint, related, related_share, relations, covers,
+                 backs, clashes, unsupported_claims)]
+```
+
+`validate()` lists violations of the register rules; an empty table means
+none were found.
+
+```{r validate}
+hlt$validate()
+```
+
+## 3. All ten registers
+
+```{r all}
+cnt <- register_counts(bundled_registers(), pooled = TRUE)
+knitr::kable(cnt[, .(study, claims, joint, related, related_share,
+                     relations, clashes, unsupported_claims)])
+```
+
+The coding protocol, the prompts and a data dictionary are in
+`system.file("extdata", package = "interfacespace")`.

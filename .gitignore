@@ -1,0 +1,11 @@
+.Rproj.user
+*.Rproj
+.Rhistory
+.RData
+.Ruserdata
+.DS_Store
+*.Rcheck/
+*.tar.gz
+/doc/
+/Meta/
+inst/doc

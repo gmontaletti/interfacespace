@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software or its data, please cite it as below."
+title: "interfacespace: Registers of joint qualitative-quantitative claims"
+abstract: >-
+  R package implementing the interface space of a mixed methods evaluation:
+  a register of findings, transformations, claims, relations among claims and
+  decisions with reasons, with the registers of ten published evaluations of
+  public services.
+type: software
+authors:
+  - family-names: Montaletti
+    given-names: Giampaolo
+    email: giampaolo.montaletti@gmail.com
+    orcid: "https://orcid.org/0009-0002-5327-1122"
+version: 0.1.0
+date-released: "2026-11-17"
+license: MIT
+repository-code: "https://github.com/gmontaletti/interfacespace"
+url: "https://github.com/gmontaletti/interfacespace"
+keywords:
+  - mixed methods
+  - integration
+  - meta-inference
+  - evaluation
+  - public services

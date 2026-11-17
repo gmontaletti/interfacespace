@@ -1,0 +1,27 @@
+{
+  "title": "interfacespace: Registers of joint qualitative-quantitative claims",
+  "description": "R package implementing the interface space of a mixed methods evaluation: a register of findings, transformations, claims, relations among claims and decisions with reasons. It ships the registers of ten published mixed methods evaluations of public services (data under CC BY 4.0) and reproduces their per-study counts.",
+  "upload_type": "software",
+  "version": "0.1.0",
+  "creators": [
+    {
+      "name": "Montaletti, Giampaolo",
+      "orcid": "0009-0002-5327-1122"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "mixed methods",
+    "integration",
+    "meta-inference",
+    "evaluation",
+    "public services"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/gmontaletti/interfacespace",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

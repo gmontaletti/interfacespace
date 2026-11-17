@@ -1,0 +1,5 @@
+"code","name","type","description"
+"A1","Giampaolo Montaletti","person","Author of the decisions (endorse / reject)"
+"A2","claude-opus-5-5","model","LLM extractor; extraction prompt v3 (17 November 2026)"
+"S1","ICF Consulting consortium (ICF with Bryson Purdon Social Research, Matt Rayment Consulting, Homeless Link, Heriot-Watt University) for MHCLG","person","Authors of the study (Ministry of Housing, Communities and Local Government (2024) Evaluation of the Housing First Pilots: Final synthesis report, October 2024; report by ICF; no individual authors named on the title page), source of the claims"
+"A3","claude-opus-5-5 (decision-proposal prompt v1)","model","Proposes decisions and correction rows applying coding rules 1-13"

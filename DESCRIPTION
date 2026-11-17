@@ -1,0 +1,41 @@
+Package: interfacespace
+Type: Package
+Title: Registers of Joint Qualitative-Quantitative Claims (Interface Spaces)
+Version: 0.1.0
+Authors@R: 
+    person("Giampaolo", "Montaletti", , "giampaolo.montaletti@gmail.com",
+           role = c("aut", "cre", "cph"),
+           comment = c(ORCID = "0009-0002-5327-1122"))
+Description: Keeps the 'interface space' of a mixed methods evaluation: the
+    set of joint qualitative-quantitative claims it produces, recorded as a
+    register of findings (qualitative or quantitative strand),
+    transformations of findings, headline claims, relations among claims
+    (backs, clashes, covers) and append-only decisions with reasons. Status
+    changes only through decisions taken by a person; machine-proposed rows
+    enter as candidates. Jointness is computed by tracing each claim back
+    through transformations to its root findings. The package ships the
+    registers of ten published mixed methods evaluations of public services,
+    with the coding protocol and the prompts used to propose rows, and
+    reproduces their per-study counts.
+License: MIT + file LICENSE
+URL: https://github.com/gmontaletti/interfacespace
+BugReports: https://github.com/gmontaletti/interfacespace/issues
+Depends: 
+    R (>= 4.1.0)
+Imports: 
+    data.table (>= 1.14.0),
+    R6,
+    stats,
+    utils
+Suggests: 
+    igraph,
+    jsonlite,
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+VignetteBuilder: knitr
+Config/testthat/edition: 3
+Encoding: UTF-8
+Language: en-GB
+Roxygen: list(markdown = TRUE, r6 = TRUE)
+RoxygenNote: 7.3.3

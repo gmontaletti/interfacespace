@@ -1,0 +1,5 @@
+"code","name","type","description"
+"A1","Giampaolo Montaletti","person","Author of the decisions (endorse / reject)"
+"A2","claude-opus-5-5","model","LLM extractor; extraction prompt v2 (17 November 2026)"
+"S1","Gulliford M, Naithani S, Morgan M","person","Authors of the study (Report for the NCCSDO, revised April 2006), source of the claims"
+"A3","claude-opus-5-5 (decision-proposal prompt v1)","model","Proposes decisions and correction rows applying coding rules 1-13"
