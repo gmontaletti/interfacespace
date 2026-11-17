@@ -1,0 +1,17 @@
+{"date":"2026-11-17","decisions":[
+{"action":"endorse","rows":["C81"],"reason":"Rule 11 (revised): 'Implementation was more likely in MDTs with clear goals and processes' (abstract Results p.viii, SS Conclusions p.xxx) and 'High-implementing teams tended to have clear goals' (SS Results p.xxvi, the only place in the SS Results that carries this result) are the same assertion in different wording; one row listing every location, resting on F15, F17, F18 as C4 did (D13). Fit expand: F15, F17, F18 root in F3 through the rule-12 transformations endorsed in D4, and the qualitative comparison explains the measured differences in implementation."},
+{"action":"reject","rows":["C4","C18"],"reason":"Rule 11 (revised): same assertion recorded twice, replaced by C81; both rows also carried fit single-strand although joint by tracing (D4)."},
+{"action":"endorse","rows":["C82","C83"],"reason":"Fit correction: C3 (F19, made from F6 and F7) and C68 (F15, made from F3) root in both strands through the rule-12 transformations endorsed in D4; the qualitative strand explores or explains the regression result (C3: more professional groups in mental health and memory teams; C68: lowest implementation in CMHTs), so fit is expand, not single-strand. Claim, location and rests_on unchanged."},
+{"action":"reject","rows":["C3","C68"],"reason":"Fit recorded as single-strand on direct rests_on only; replaced by C82 and C83 with fit expand."},
+{"action":"endorse","rows":["C84"],"reason":"Rule 11 (revised): C8 (abstract Results: 16 themes with substantial diversity relating to purpose, structure, processes, content and role of the patient) and C44 (abstract Conclusions: 'Substantial diversity exists in the purpose, structure, processes and content of MDT meetings') are the same assertion stated as finding and as conclusion; one row resting on F26."},
+{"action":"reject","rows":["C8","C44"],"reason":"Rule 11 (revised): replaced by C84."},
+{"action":"endorse","rows":["C85"],"reason":"Rule 11 (revised): C58 (Chapter 7 p.87) and C66 (Chapter 7 p.88) assert the same thing in different words: multidisciplinary input is valued in principle but in practice not all disciplines contribute effectively; one row on F20, F21."},
+{"action":"reject","rows":["C58","C66"],"reason":"Rule 11 (revised): replaced by C85."},
+{"action":"endorse","rows":["R50","R51","R52"],"reason":"Rule 2: summary claims C43, C52, C39 cover the clear-goals result; re-anchored from R3, R18, R25 to C81."},
+{"action":"reject","rows":["R3","R18","R25"],"reason":"Point to C4, rejected under rule 11; replaced by R50, R51, R52."},
+{"action":"endorse","rows":["R53"],"reason":"Chapter 7 p.88 'Taken together': C70 covers the CMHT explanation; re-anchored from R35 to C83."},
+{"action":"reject","rows":["R35"],"reason":"Points to C68, rejected for the fit correction; replaced by R53."},
+{"action":"reject","rows":["R5"],"reason":"Rule 11: C44 covers C8 links two restatements of one assertion; after the merge into C84 it would link a claim to itself."},
+{"action":"endorse","rows":["R54","R55","R56","R57","R58","R59","R60","R61","R62","R63","R64"],"reason":"Rule 4 / rule 2: the diversity claim C84 is narrowed by the domain results C20-C30 (SS p.xxvii-xxviii, introduced by 'Variation related to the purpose, functions, structure and processes'); re-anchored from R6-R16."},
+{"action":"reject","rows":["R6","R7","R8","R9","R10","R11","R12","R13","R14","R15","R16"],"reason":"Anchored on C44, rejected under rule 11; replaced by R54-R64."}
+]}

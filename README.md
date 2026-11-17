@@ -21,6 +21,9 @@ with reasons. The package provides:
 - `read_register()` to read a workbook-format CSV register, replaying its
   decisions in order, and `register_counts()` for per-study and pooled
   counts;
+- the origin of each decision (who proposed it, and whether the author
+  changed the proposal), read from `decision_origin.csv` and summarised by
+  `decision_origin_summary()`;
 - `validate()`, `joint_display()`, `as_igraph()` and `to_json()`;
 - the registers of ten published mixed methods evaluations of public
   services, with the coding protocol and the prompts used to propose rows.
@@ -57,6 +60,9 @@ hlt$counts()
 
 # per-study and pooled counts of the ten registers
 register_counts(bundled_registers(), pooled = TRUE)
+
+# who proposed the decisions: A3 proposals unchanged, modified, reversed
+decision_origin_summary(bundled_registers())[table == "all"]
 ```
 
 See `vignette("interface-space")` for the workbook in brief and a worked
@@ -81,6 +87,10 @@ qualitative-quantitative claims (Version 0.1.0) [R package].
 Zenodo. https://doi.org/10.5281/zenodo.24306874
 
 All versions (concept DOI): https://doi.org/10.5281/zenodo.24306873
+
+The version DOI above refers to the archived release 0.1.0. The development
+version on GitHub is 0.1.1 (decision origin, see `NEWS.md`); it has no
+version DOI of its own until it is released.
 
 ```bibtex
 @Manual{montaletti2026interfacespace,

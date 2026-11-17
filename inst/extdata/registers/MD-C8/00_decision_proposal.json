@@ -1,0 +1,461 @@
+{
+ "date": "2026-11-17",
+ "eligibility": {
+  "reference": "Johnsen S, Blenkinsopp J, Rayment M (2022) Scotland's Housing First Pathfinder evaluation: Final report. Heriot-Watt University. doi:10.17861/8GJ7-SV28",
+  "file": "MD-C8_Johnsen_2022_HousingFirstPathfinder.pdf",
+  "decision": "eligible",
+  "reason": "Relationship in a publicly funded service (Housing First support, social housing, inter-agency work); quantitative monitoring, survey and cost findings and qualitative interview findings reported."
+ },
+ "decisions": [
+  {
+   "action": "endorse",
+   "rows": [
+    "eligibility"
+   ],
+   "reason": "Housing First Pathfinder (support workers and service users; inter-agency relations with housing, health and justice) funded mainly by the Scottish Government and taken over by local authorities; Tracker data n=579, surveys n=80/21, costings, and 200 interview and focus-group participants."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "F13",
+    "F14",
+    "F15",
+    "F16",
+    "F17",
+    "F19",
+    "F20",
+    "F21",
+    "F22",
+    "F23",
+    "F24",
+    "F25",
+    "F26",
+    "F27",
+    "F28",
+    "F29",
+    "F30",
+    "F31",
+    "F32",
+    "F33",
+    "F34",
+    "F35",
+    "F36",
+    "F37",
+    "F38",
+    "F39",
+    "F40",
+    "F41",
+    "F42",
+    "F43",
+    "F44",
+    "F45",
+    "F46",
+    "F47",
+    "F48",
+    "F49",
+    "F50",
+    "F51",
+    "F52",
+    "F53",
+    "F54",
+    "F55",
+    "F56",
+    "F57",
+    "F58",
+    "F59",
+    "F60",
+    "F61",
+    "F62",
+    "F63",
+    "F64",
+    "F65",
+    "F66",
+    "F67",
+    "F68",
+    "F69",
+    "F70",
+    "F71",
+    "F72",
+    "F73",
+    "F74",
+    "F75",
+    "F76",
+    "F77",
+    "F78",
+    "F79",
+    "F80"
+   ],
+   "reason": "Findings as reported, with page references and quotes; F7 and F19 are main reported results without a headline claim."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "F18",
+    "T:F18"
+   ],
+   "reason": "Rules 9 and 13: the high / medium / low fidelity rating is a rating design applied to interview evidence ('qualitatively assessed', p.4), a design-level interface point for the notes, not a strand-crossing transformation (rule 12 does not cover it); the ratings are Q, not N. Replaced by F81."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "F81"
+   ],
+   "reason": "Correction of F18: fidelity ratings as a Q finding, no transformation."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "T:F17"
+   ],
+   "reason": "Costed case studies selected from the follow-up survey (N to N); does not cross strands and does not change any root."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C1"
+   ],
+   "reason": "Rests on F18, rejected; replaced by C134 (rests on F81, Q, single-strand)."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C7",
+    "C13",
+    "C14",
+    "C18",
+    "C56",
+    "C99",
+    "C100",
+    "C101",
+    "C123"
+   ],
+   "reason": "Rule 11: the conclusion repeats the same claim (C99 = C7; C100 = C13 and C14; C101 = C18; C123 = C56); one row per claim listing every location, replaced by C135-C139."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C26",
+    "C104",
+    "C30",
+    "C109",
+    "C31",
+    "C102",
+    "C40",
+    "C43",
+    "C46",
+    "C107",
+    "C50",
+    "C117",
+    "C127",
+    "C71",
+    "C113",
+    "C72",
+    "C73",
+    "C115",
+    "C82",
+    "C124"
+   ],
+   "reason": "Rule 11 as revised (same assertion whatever the wording), with rule 1 where a sentence joins a repeat to a separable assertion: C104 = C26 (Chapter 10 pandemic paragraph, p.149, restates p.xii) -> C142; C109 = C30 (ripple effect: providers adopt more flexible / trauma-informed practice) -> C143; C102 = C31 (experiences very positive overall) + C40 (transformational for some) -> C144, C145; C43 'extremely positive effect on their quality of life' = C40 'very positive difference to their lives' -> C145, recommendation kept as C146; C107 'can expect sticking points to shift over time' = C46 -> C147, its first assertion kept as C148; C117 'call for cross-sector investment' = C50 'call for cross-sectoral input [...] in the funding', and the cross-sectoral part of C127 -> C149, the long-term part kept as C150; C113 = C71 (helped navigate, but barriers remained) + C72 (mental healthcare especially acute) -> C151, C152; C115 'this underscores the need for broader systems change' = C73 'strong call for cross-sector systems change' ('we found X' / 'we conclude X') -> C153; C124 = second sentence of C82 (call for guidance on ending support) -> C155, first sentence kept as C154."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C93"
+   ],
+   "reason": "Rule 7: the same claim is argued with the interview evidence at s.9.2.2 p.141 ('more congruent with the qualitative interview evidence regarding outcomes reported in s.5.2'), and s.5.2.1 p.52 points back ('see also s.9.2.2'); rests_on incomplete. Replaced by C140 (F15;F24, confirm)."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C97",
+    "C141"
+   ],
+   "reason": "Rule 3: C97 lists more than the text uses. The earlier correction C141 kept F24 and F28 through the p.141 pointers, but those pointers qualify the health and criminal justice cost figures (C140, C94), not the benefits-exceed-costs judgement. The claim names the qualitative findings only in general: 'taking the evaluation's qualitative findings into account also, indication that there is strong potential for the benefits to exceed costs over time' (p.xviii, PDF 21; s.9.3 p.148, PDF 171). Chapter 9 'draws upon two key data sources, these being project-level financial returns and the individual-level service user outcomes survey' (p.132, PDF 155), and no passage argues the judgement with specific qualitative findings (rule 7 does not apply). Replaced by C156 (F15, single-strand)."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C133"
+   ],
+   "reason": "Rule 6: 'Further evidence and reflection are required' is research agenda, not a headline claim."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C134",
+    "C135",
+    "C136",
+    "C137",
+    "C138",
+    "C139",
+    "C140"
+   ],
+   "reason": "Correction rows from the first pass (C134 for C1; C135-C139 rule 11 merges; C140 rule 7)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C142",
+    "C143",
+    "C144",
+    "C145",
+    "C146",
+    "C147",
+    "C148",
+    "C149",
+    "C150",
+    "C151",
+    "C152",
+    "C153",
+    "C154",
+    "C155",
+    "C156"
+   ],
+   "reason": "Correction rows of this pass: C142-C155 rule 11 merges (with rule 1 splits C146, C148, C150, C154), each listing every location; C156 rule 3 correction of C141 (F15, single-strand)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C33",
+    "C120",
+    "C121"
+   ],
+   "reason": "Rule 5: each is one assertion with a list of examples (five features; facilitators; inhibitors); not split under rule 1. C120 and C121 summarise several different claims (rule 2, covers)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C27"
+   ],
+   "reason": "Joint claim: the text links the sustainment outcome (F8) to the stakeholder shift in mindset at p.50 ('This outcome, combined with the other achievements [...] had led to a general shift in mindset'); F31 and F32 give the consensus. Fit expand."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C103",
+    "C105",
+    "C108",
+    "C112"
+   ],
+   "reason": "Rule 2: each summarises several different claims, not a repeat of one (C103: C92, C95, C156; C105: C135, C136, adding speed and constrained supply; C108: C27, C136; C112: C151, C152); empty rests_on, links as covers."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C8",
+    "C9",
+    "C10",
+    "C11",
+    "C12",
+    "C15",
+    "C16",
+    "C17",
+    "C19",
+    "C20",
+    "C21",
+    "C22",
+    "C23",
+    "C24",
+    "C25",
+    "C28",
+    "C29",
+    "C32",
+    "C34",
+    "C35",
+    "C36",
+    "C37",
+    "C38",
+    "C39",
+    "C41",
+    "C42",
+    "C44",
+    "C45",
+    "C47",
+    "C48",
+    "C49",
+    "C51",
+    "C52",
+    "C53",
+    "C54",
+    "C55",
+    "C57",
+    "C58",
+    "C59",
+    "C60",
+    "C61",
+    "C62",
+    "C63",
+    "C64",
+    "C65",
+    "C66",
+    "C67",
+    "C68",
+    "C69",
+    "C70",
+    "C74",
+    "C75",
+    "C76",
+    "C77",
+    "C78",
+    "C79",
+    "C80",
+    "C81",
+    "C83",
+    "C84",
+    "C85",
+    "C86",
+    "C87",
+    "C88",
+    "C89",
+    "C90",
+    "C91",
+    "C92",
+    "C94",
+    "C95",
+    "C96",
+    "C98",
+    "C106",
+    "C110",
+    "C111",
+    "C114",
+    "C116",
+    "C118",
+    "C119",
+    "C122",
+    "C125",
+    "C126",
+    "C128",
+    "C129",
+    "C130",
+    "C131",
+    "C132"
+   ],
+   "reason": "Headline claims from the executive summary and Chapter 10, each a distinct assertion after the rule 11 re-check, rests_on following rules 2, 3 and 8; C96 is a summary (rule 2); C98, C118, C126, C128, C129 are framing or recommendations with empty rests_on; C126 and C131 are practice or policy recommendations (rule 6); C94 is the stated discord (joint)."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7",
+    "R9",
+    "R17",
+    "R20",
+    "R21",
+    "R22",
+    "R38"
+   ],
+   "reason": "Anchored on claims replaced in the first pass (C18, C13, C93, C97, C7, C56); re-pointed as R51-R63."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "R24",
+    "R31",
+    "R35",
+    "R43",
+    "R44",
+    "R45",
+    "R47",
+    "R59"
+   ],
+   "reason": "Anchored on claims replaced in this pass (C71, C26, C72, C115, C102, C117, C141); re-pointed as R64-R71."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "R12",
+    "R39",
+    "R13",
+    "R14",
+    "R18",
+    "R19",
+    "R25",
+    "R26",
+    "R48"
+   ],
+   "reason": "Rule 11: links a claim to its own repeat (C101/C18, C123/C56, C102/C31 and C40, C104/C26, C113/C71 and C72, C124/C82), merged into one row. R18 (C104 covers C25) is a restatement link, not a summary: C104 is the repeat of C26."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "R42"
+   ],
+   "reason": "Rule 10: the call for systems change only follows the brokering statement; no marker of the link in the text."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "R50"
+   ],
+   "reason": "Rule 6: points to the rejected research-agenda claim C133."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "R8",
+    "R10",
+    "R11",
+    "R15",
+    "R16",
+    "R23",
+    "R27",
+    "R28",
+    "R29",
+    "R30",
+    "R32",
+    "R33",
+    "R34",
+    "R36",
+    "R37",
+    "R40",
+    "R41",
+    "R46",
+    "R49",
+    "R51",
+    "R52",
+    "R53",
+    "R54",
+    "R55",
+    "R56",
+    "R57",
+    "R58",
+    "R60",
+    "R61",
+    "R62",
+    "R63",
+    "R64",
+    "R65",
+    "R66",
+    "R67",
+    "R68",
+    "R69",
+    "R70",
+    "R71",
+    "R72"
+   ],
+   "reason": "Covers (rule 2 summary claims) or backs marked in the text (therefore, given, this underscores, underpinned by, explicit pointers 'this issue', 'such as'); R51-R58, R60-R63 and R64-R72 re-point endorsed links to the correction rows; R72 adds the second claim C112 summarises."
+  }
+ ]
+}

@@ -6,6 +6,9 @@
 .relation_types <- c("backs", "clashes", "covers")
 .actions <- c("endorse", "reject")
 .reserved_rows <- c("eligibility")
+.accepted_values <- c("unchanged", "modified_by_author")
+.origin_columns <- c("decision", "proposed_by", "accepted", "source_file",
+                     "note")
 
 # 2. small helpers -----
 
@@ -160,6 +163,13 @@
       seq = integer(),
       row = character(),
       action = character()
+    ),
+    decision_origin = data.table::data.table(
+      decision = character(),
+      proposed_by = character(),
+      accepted = character(),
+      source_file = character(),
+      note = character()
     )
   )
 }

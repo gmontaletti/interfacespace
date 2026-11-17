@@ -73,16 +73,19 @@ x$validate()
 \item \href{#method-InterfaceSpace-propose_claim}{\code{InterfaceSpace$propose_claim()}}
 \item \href{#method-InterfaceSpace-relate}{\code{InterfaceSpace$relate()}}
 \item \href{#method-InterfaceSpace-decide}{\code{InterfaceSpace$decide()}}
+\item \href{#method-InterfaceSpace-add_decision_origin}{\code{InterfaceSpace$add_decision_origin()}}
 \item \href{#method-InterfaceSpace-agents}{\code{InterfaceSpace$agents()}}
 \item \href{#method-InterfaceSpace-findings}{\code{InterfaceSpace$findings()}}
 \item \href{#method-InterfaceSpace-transformations}{\code{InterfaceSpace$transformations()}}
 \item \href{#method-InterfaceSpace-claims}{\code{InterfaceSpace$claims()}}
 \item \href{#method-InterfaceSpace-relations}{\code{InterfaceSpace$relations()}}
 \item \href{#method-InterfaceSpace-decisions}{\code{InterfaceSpace$decisions()}}
+\item \href{#method-InterfaceSpace-decision_origin}{\code{InterfaceSpace$decision_origin()}}
 \item \href{#method-InterfaceSpace-roots}{\code{InterfaceSpace$roots()}}
 \item \href{#method-InterfaceSpace-is_joint}{\code{InterfaceSpace$is_joint()}}
 \item \href{#method-InterfaceSpace-counts}{\code{InterfaceSpace$counts()}}
 \item \href{#method-InterfaceSpace-validate}{\code{InterfaceSpace$validate()}}
+\item \href{#method-InterfaceSpace-origin_summary}{\code{InterfaceSpace$origin_summary()}}
 \item \href{#method-InterfaceSpace-joint_display}{\code{InterfaceSpace$joint_display()}}
 \item \href{#method-InterfaceSpace-as_igraph}{\code{InterfaceSpace$as_igraph()}}
 \item \href{#method-InterfaceSpace-to_json}{\code{InterfaceSpace$to_json()}}
@@ -401,6 +404,47 @@ The object, invisibly.
 }
 }
 \if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-InterfaceSpace-add_decision_origin"></a>}}
+\if{latex}{\out{\hypertarget{method-InterfaceSpace-add_decision_origin}{}}}
+\subsection{Method \code{add_decision_origin()}}{
+Record who proposed one or more decisions. The origin
+is kept beside the decision log, which stays unchanged; it does not
+affect any status. Each decision has at most one origin. Once an
+origin is recorded, \code{validate()} reports decisions without one.
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{InterfaceSpace$add_decision_origin(
+  decision,
+  proposed_by,
+  accepted = "unchanged",
+  source_file = "",
+  note = ""
+)}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{decision}}{Decision codes (\code{"D1"}, ...).}
+
+\item{\code{proposed_by}}{Agent codes of the proposers, recycled to the
+length of \code{decision}.}
+
+\item{\code{accepted}}{\code{"unchanged"} (the decision equals the proposal) or
+\code{"modified_by_author"} (the decision-maker changed the proposal or
+added the item), recycled.}
+
+\item{\code{source_file}}{File holding the proposal (\code{"none"} when no file
+was kept), recycled.}
+
+\item{\code{note}}{Free text, e.g. what the decision-maker changed, recycled.}
+}
+\if{html}{\out{</div>}}
+}
+\subsection{Returns}{
+The object, invisibly.
+}
+}
+\if{html}{\out{<hr>}}
 \if{html}{\out{<a id="method-InterfaceSpace-agents"></a>}}
 \if{latex}{\out{\hypertarget{method-InterfaceSpace-agents}{}}}
 \subsection{Method \code{agents()}}{
@@ -506,7 +550,24 @@ The decision log, in the order recorded.
 }
 
 \subsection{Returns}{
-A \code{data.table}.
+A \code{data.table} with columns \code{code}, \code{date}, \code{actor}, \code{action},
+\code{rows}, \code{reason}, and the origin columns \code{proposed_by} and
+\code{accepted} (\code{NA} when no origin is recorded for the decision; see
+\code{add_decision_origin()}).
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-InterfaceSpace-decision_origin"></a>}}
+\if{latex}{\out{\hypertarget{method-InterfaceSpace-decision_origin}{}}}
+\subsection{Method \code{decision_origin()}}{
+The decision-origin table: who proposed each decision.
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{InterfaceSpace$decision_origin()}\if{html}{\out{</div>}}
+}
+
+\subsection{Returns}{
+A \code{data.table} with columns \code{decision}, \code{proposed_by},
+\code{accepted}, \code{source_file}, \code{note}.
 }
 }
 \if{html}{\out{<hr>}}
@@ -588,7 +649,39 @@ unknown actor signed), \code{decision_unknown_row},
 \code{joint_claim_single_strand_fit} (endorsed joint claim with fit
 single-strand or not recorded), \code{endorsed_claim_nonendorsed_finding}
 (endorsed claim resting on a finding that is not endorsed),
-\code{transformation_output_unregistered}, \code{partition_not_crossing}.
+\code{transformation_output_unregistered}, \code{partition_not_crossing};
+once a decision origin is recorded (see \code{add_decision_origin()}):
+\code{decision_without_origin}, \code{origin_unknown_decision},
+\code{origin_unknown_agent}.
+}
+}
+\if{html}{\out{<hr>}}
+\if{html}{\out{<a id="method-InterfaceSpace-origin_summary"></a>}}
+\if{latex}{\out{\hypertarget{method-InterfaceSpace-origin_summary}{}}}
+\subsection{Method \code{origin_summary()}}{
+Counts of decisions by origin, per table decided.
+\subsection{Usage}{
+\if{html}{\out{<div class="r">}}\preformatted{InterfaceSpace$origin_summary(agent = "A3")}\if{html}{\out{</div>}}
+}
+
+\subsection{Arguments}{
+\if{html}{\out{<div class="arguments">}}
+\describe{
+\item{\code{agent}}{Code of the proposing agent whose proposals are counted
+(default \code{"A3"}, the decision-proposal and consistency model).}
+}
+\if{html}{\out{</div>}}
+}
+\subsection{Returns}{
+A \code{data.table} with one row per table decided (\code{eligibility},
+\code{findings}, \code{transformations}, \code{claims}, \code{relations}) and a row
+\code{all}; columns \code{study}, \code{table}, \code{decisions} (decisions touching
+rows of the table; a decision on rows of several tables counts in
+each, once in \code{all}), \code{unchanged} (proposed by \code{agent}, recorded
+unchanged), \code{modified} (\code{accepted = "modified_by_author"}), \code{other}
+(proposed by another agent, recorded unchanged), \code{no_origin}, and
+\code{reversed_later} (decisions counted in \code{unchanged} with at least one
+row of the table decided the opposite way by a later decision).
 }
 }
 \if{html}{\out{<hr>}}

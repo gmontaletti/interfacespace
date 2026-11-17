@@ -1,0 +1,330 @@
+{
+ "date": "2026-11-17",
+ "eligibility": {
+  "reference": "Ministry of Housing, Communities and Local Government (2024) Evaluation of the Housing First Pilots: Final synthesis report. October 2024. Report by ICF (with Bryson Purdon Social Research, Matt Rayment Consulting, Homeless Link, Heriot-Watt University).",
+  "file": "MD-C11_MHCLG_2024_HousingFirstSynthesis.pdf",
+  "decision": "eligible",
+  "reason": "Relationship in a publicly funded service (Housing First Pilots funded by MHCLG: clients and support workers; Pilots and housing, health, social care and justice services); quantitative survey, monitoring and CBA findings and qualitative interview findings reported."
+ },
+ "decisions": [
+  {
+   "action": "endorse",
+   "rows": [
+    "eligibility"
+   ],
+   "reason": "Housing First Pilots in three combined authorities funded by central government (£28m plus extension); relationships between clients and support workers and between the Pilots and housing, health and justice services. Quantitative baseline and 6/12-month surveys with significance tests, staff three-year data, monitoring data and CBA; qualitative interviews (313, including 81 service users) and 72 fidelity interviews."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "F13",
+    "F14",
+    "F15",
+    "F16",
+    "F17",
+    "F18",
+    "F19",
+    "F20",
+    "F21",
+    "F22",
+    "F23",
+    "F24",
+    "F25",
+    "F26",
+    "F27",
+    "F28",
+    "F29",
+    "F30",
+    "F31",
+    "F32",
+    "F33",
+    "F34",
+    "F35",
+    "F36",
+    "F37",
+    "F38",
+    "F39",
+    "F40",
+    "F41",
+    "F42",
+    "F43",
+    "F44",
+    "F45",
+    "F46",
+    "F47",
+    "F48",
+    "F49",
+    "F50",
+    "F51",
+    "F52",
+    "F53",
+    "F54",
+    "F55",
+    "F56",
+    "F57",
+    "F58",
+    "F60",
+    "F61",
+    "F62",
+    "F63",
+    "F64",
+    "F65",
+    "F66"
+   ],
+   "reason": "Findings as reported, with page references and quotes."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "F59",
+    "T:F59"
+   ],
+   "reason": "Rule 13 and the text at p.46: the fidelity scores come from internal self-assessments done by two Pilots (GMHF, LCRCA), not by the evaluators and not made from the evaluators' interviews F60, so made_from and done_by (S1) are wrong; the scoring is a rating design (design-level point for the notes, as MD-C8 T:F18); results are reported only as 'score highly', so the finding is Q, not N. Replaced by F67."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "F67"
+   ],
+   "reason": "Correction of F59: Pilots' self-assessed fidelity as a Q finding, no transformation; done by two Pilots, not by S1."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "T:F64",
+    "T:F65",
+    "T:F66"
+   ],
+   "reason": "CBA steps reported by S1 (valuation, adjustments, benefit:cost ratio); N to N, no strand crossing."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C1"
+   ],
+   "reason": "Rule 7: s.2.10 (p.22) argues the same claim with both strands ('Both qualitative and quantitative data highlight the prevalence of a range of vulnerabilities and complexity of need'); rests_on incomplete. Replaced by C85 (F1-F8, confirm)."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C54",
+    "C60"
+   ],
+   "reason": "Rule 11 with rule 1: 'Support is typically most intense in the first few (weeks or) months' is the same assertion in both rows (the body at p.42 says 'As discussed above'); split into C87 (support critical for tenancy success), C88 (the repeated assertion, both locations) and C89 (scaling given non-linear recovery)."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C71",
+    "C74"
+   ],
+   "reason": "Rule 11: both sentences assert the factors that hindered fidelity, in different wording; the lists are examples (rule 5). Merged as C86."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C73"
+   ],
+   "reason": "rests_on F59, which is rejected (strand and transformation). Replaced by C90 (F67;F60, single-strand Q)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C85",
+    "C86",
+    "C87",
+    "C88",
+    "C89",
+    "C90"
+   ],
+   "reason": "Correction rows C85-C90 (rules 7, 11, 1 and the F59 correction)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C38",
+    "C82"
+   ],
+   "reason": "Rule 3: both refer to the quantitative measures only in general ('the full range of outcomes quantitively measured'; 'traditional outcomes measures'); the body (p.34, p.35) names outcome domains, not specific survey findings. rests_on stays Q; single-strand. The link of C38 to survey outcomes is recorded as backs (R10-R12)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C3",
+    "C5",
+    "C6",
+    "C8",
+    "C9",
+    "C14",
+    "C31",
+    "C39"
+   ],
+   "reason": "Headline claims kept as written. Reporting inconsistencies: executive-summary figures absent from or differing from the synthesis body (C3 96% vs 91% ever rough sleeping; C5 depression/anxiety and other conditions not in s.2.5; C6 alcohol figures not in s.2.6; C8 84% at six months; C9 housing satisfaction; C14 65% at six months and the 6-to-12-month rise; C31 mental health subgroup; C39 'distance travelled' attributed to clients, in the body to stakeholders and staff). Rule 8 gives rests_on only where the body reports the same result; C9 and C31 stay unsupported in the text (empty rests_on)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C44"
+   ],
+   "reason": "Rule 11: one assertion (numbers leaving the programme) in two places. Reporting inconsistency: '512 (of the 1,061)' (executive summary) vs '34% of the total 1,396' (conclusions); 512/1,396 = 36.7%, and the body (p.36) gives 1,396 accepted and 1,061 housed."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C20",
+    "C21",
+    "C10",
+    "C55"
+   ],
+   "reason": "Headline claims as extracted. Unstated tensions, no relation (protocol s.5 and rule 4): Q accounts of reduced or more stable substance use (F32, s.3.5 'reduced substance use') next to N no significant reduction in dependency (C20); Q loneliness after moving in (C55) next to N loneliness halved at 12 months (C10). The text does not state or show a link."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C46",
+    "C53",
+    "C80"
+   ],
+   "reason": "Headline claims with empty rests_on: C46 rests on cited literature; C53 is a recommendation for practice (rule 6 keeps it) with no finding given; C80 summarises C20 and C24 (rule 2)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C2"
+   ],
+   "reason": "Joint claim: N baseline findings F1, F3-F5 and Q interview findings F6-F8, linked in the text ('Qualitative data endorses quantitative findings', p.5; 'echoes these findings', p.21). Fit confirm."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C4",
+    "C7",
+    "C11",
+    "C12",
+    "C13",
+    "C15",
+    "C16",
+    "C17",
+    "C18",
+    "C19",
+    "C22",
+    "C23",
+    "C24",
+    "C25",
+    "C26",
+    "C27",
+    "C28",
+    "C29",
+    "C30",
+    "C32",
+    "C33",
+    "C34",
+    "C35",
+    "C36",
+    "C37",
+    "C40",
+    "C41",
+    "C42",
+    "C43",
+    "C45",
+    "C47",
+    "C48",
+    "C49",
+    "C50",
+    "C51",
+    "C52",
+    "C56",
+    "C57",
+    "C58",
+    "C59",
+    "C61",
+    "C62",
+    "C63",
+    "C64",
+    "C65",
+    "C66",
+    "C67",
+    "C68",
+    "C69",
+    "C70",
+    "C72",
+    "C75",
+    "C76",
+    "C77",
+    "C78",
+    "C79",
+    "C81",
+    "C83"
+   ],
+   "reason": "Headline claims (executive summary and conclusions) with rests_on as used in the text; rule 11 merges by A2 kept."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C84"
+   ],
+   "reason": "Conclusions list of implementation challenges; each item restates a reported result (rule 8: F43, F55, F57, F58); not a summary of headline claims only (poor understanding of principles has no other headline claim)."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "R1",
+    "R9"
+   ],
+   "reason": "Rule 6: point to rejected claims (C1, C71). Re-pointed as R18 and R19."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "R18",
+    "R19"
+   ],
+   "reason": "Marked backs (rule 10): 'endorses' / 'echoes these findings' (R18); 'This has meant' (R19)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R17"
+   ],
+   "reason": "Covers (rule 2): umbrella or summary sentence followed by, or restating, the narrower claims."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "R8"
+   ],
+   "reason": "Marked backs: 'This suggests' (rule 10)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "R10",
+    "R11",
+    "R12"
+   ],
+   "reason": "Marked backs (rule 10): s.3.5 p.35 qualitative interviews 'provide further evidence' of 'outcomes measured through the survey data (e.g. reduced substance use, better health and increased social integration)'. Mapping of the examples to C21, C16 and C11 is A2's reading."
+  }
+ ]
+}

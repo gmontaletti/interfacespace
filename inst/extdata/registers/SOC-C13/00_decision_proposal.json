@@ -1,0 +1,282 @@
+{
+ "date": "2026-11-17",
+ "eligibility": {
+  "reference": "Forrester, D., Lynch, A., Bostock, L., Newlands, F., Preston, B., & Cary, A. (2017). Family Safeguarding Hertfordshire: Evaluation report. Children's Social Care Innovation Programme Evaluation Report 55 (DFE-RR574). London: Department for Education.",
+  "file": "SOC-C13_Forrester_2017_FamilySafeguarding.pdf",
+  "decision": "eligible",
+  "reason": "Relationship in a public service (social worker-family and multidisciplinary team relationships in Hertfordshire Children's Services); qualitative and quantitative findings both reported."
+ },
+ "decisions": [
+  {
+   "action": "endorse",
+   "rows": [
+    "eligibility"
+   ],
+   "reason": "Object is a relationship in a publicly funded service (social workers and families; multidisciplinary teams in Hertfordshire Children's Services, DfE Innovation Programme). Qualitative findings (staff interviews, case studies, observations of group supervision) and quantitative findings (staff survey, coded observations, ICS records, KPI dataset, costs) are both reported."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "F13",
+    "F14",
+    "F15",
+    "F16",
+    "F17",
+    "F18",
+    "F20",
+    "F21",
+    "F22",
+    "F23",
+    "F24",
+    "F25",
+    "F26",
+    "F27",
+    "F28",
+    "F29",
+    "F30",
+    "F31",
+    "F32",
+    "F33",
+    "F34",
+    "F35",
+    "F36",
+    "F37",
+    "F38",
+    "F39",
+    "F40",
+    "F41",
+    "F42",
+    "F43",
+    "F44",
+    "F45",
+    "F46",
+    "F47",
+    "F48",
+    "F49"
+   ],
+   "reason": "Findings with page and verbatim quote, strand correct; headline claims rest on them or they are main reported results. Coded observations (F25-F28) are N roots: MITI-derived ratings with no reported qualitative finding from the recordings (rule 9, design-level note)."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "F19"
+   ],
+   "reason": "Not a finding: p.31 'Aspects of the underlying working context that are likely to have influenced these findings' is the evaluators' account (management turnover, caseload variation, feel-good factor) with no stated data source; it is not a reported qualitative result. Claims C10 and C11 are corrected without it (C74, C75)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "F50"
+   ],
+   "reason": "Correction finding (A3): the qualitative MI result that p.65 uses ('our qualitative evidence suggested that initial enthusiasm had been created through the training in MI'), p.26 staff interviews, not registered by A2 (rule 3)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "T:F6",
+    "T:F16"
+   ],
+   "reason": "Quantitization done by S1: coded interview / open-ended responses counted (p.26, p.30). Strand-crossing; the new N findings root in Q only, so no joint roots are created."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "T:F48",
+    "T:F49"
+   ],
+   "reason": "Cost models done by S1, N to N (p.60, Appendix 5). F48 uses the ICS days-in-care analysis as the text states (p.58, p.91), although the 39% reduction in Table 30 differs from the 52% in F34; noted as a reporting inconsistency."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C10",
+    "C11"
+   ],
+   "reason": "rests_on wrong: includes F19, which is not a finding. Replaced by C74 (F18, single-strand) and C75 (F13, F16, F18, still joint)."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C22"
+   ],
+   "reason": "rests_on incomplete (rule 3): p.65 uses qualitative evidence on MI training that has no registered finding. Replaced by C76 with F50 added."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C37"
+   ],
+   "reason": "rests_on wrong (rule 3): the text names no specific qualitative findings; F2, F7, F14, F30 were assigned by A2, and no passage argues the claim with them (rule 7 does not apply). Replaced by C77 with empty rests_on (unsupported in the text)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C74",
+    "C75",
+    "C76",
+    "C77"
+   ],
+   "reason": "Correction rows (A3) for C10, C11, C22, C37, with rests_on limited to the findings the text uses (rules 3, 7, 8)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C12",
+    "C31",
+    "C35",
+    "C48",
+    "C50"
+   ],
+   "reason": "Headline claims kept as written, resting on the findings the text uses. Reporting inconsistencies between executive summary and results are noted, not corrected: C12 44% domestic abuse vs 53% domestic violence (p.32; 44% is housing); C31 days in care not significant (p=0.06, p.40) and not stated as such; C35 '6 points' not reported (Table 5: +7.00, +5.56, +6.25); C48 'one-half' is the projected 53% (observed 31-100%); C50 GBP 2.6m vs Table 13 GBP 2,671,260 and p.60 'over GBP 2.5 million'."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C9",
+    "C34",
+    "C40"
+   ],
+   "reason": "Joint claims resting on findings the text uses: C9 interviews and survey ('consistent with interview findings', p.27; p.31 conclusion, rule 7); C34 Table 5 ('Quantitative analysis found', p.11) and case studies ('To explore this further', p.12; 'First... Second', p.13); C40 explicit link on p.12 and p.45 ('This might go some way to explaining the reduction in children entering care')."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C1",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C14",
+    "C16",
+    "C17",
+    "C18",
+    "C19",
+    "C20",
+    "C27",
+    "C28",
+    "C29",
+    "C30",
+    "C36",
+    "C38",
+    "C39",
+    "C41",
+    "C42",
+    "C46",
+    "C47",
+    "C49",
+    "C51",
+    "C53",
+    "C62",
+    "C69",
+    "C70"
+   ],
+   "reason": "Headline claims (executive summary, conclusions, recommendations) resting on the findings the text uses or restates (rules 3, 7, 8); one row per assertion with all locations (rules 1, 11); single-strand."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C2",
+    "C8",
+    "C13",
+    "C15",
+    "C21",
+    "C23",
+    "C24",
+    "C25",
+    "C26",
+    "C32",
+    "C33",
+    "C43",
+    "C44",
+    "C52",
+    "C54",
+    "C56",
+    "C57",
+    "C58",
+    "C59",
+    "C60",
+    "C61",
+    "C63",
+    "C64",
+    "C65",
+    "C66",
+    "C67",
+    "C68",
+    "C71",
+    "C72",
+    "C73"
+   ],
+   "reason": "Headline claims with no finding cited at that point: rests_on empty (unsupported in the text) or summary claims linked by 'covers' (rule 2). Recommendations are for practice and policy, not research agenda (rule 6). Repeats are merged in one row (rule 11); C71 summarises several claims and stays a separate row (rule 2)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C45",
+    "C55"
+   ],
+   "reason": "Headline claims with empty rests_on. C45 (KPIs 'limited evidence to evaluate FSH as a reform', p.12) does not clash with C66 ('unequivocal support for continuing the development of FSH', p.15): C45 concerns the KPI dataset alone, C66 the whole evaluation and continuation; both hold (rule 4). C55 merges p.13, p.15/67 and p.66 wordings of one assertion (rule 11)."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "R5",
+    "R8"
+   ],
+   "reason": "Relations from or to rejected claims (C22, C37); replaced by R31 (C20 backs C76) and R30 (C77 backs C36)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R6",
+    "R7",
+    "R9",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R17",
+    "R18",
+    "R19",
+    "R20",
+    "R30",
+    "R31"
+   ],
+   "reason": "'backs' marked in the text (rule 10): 'is the rationale', 'This again supports', 'This demonstrates', 'as it highlights', 'In doing so, it identified', 'Quantitative analysis found', 'This highlighted', 'It seems clear that' (inference from the case studies), 'This is likely to be linked', 'First... Second', 'In this respect', 'While these... they do provide', 'therefore', 'For, while', 'also reflected in'."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "R21",
+    "R22",
+    "R23",
+    "R24",
+    "R25",
+    "R26",
+    "R27",
+    "R28",
+    "R29"
+   ],
+   "reason": "'covers' (rule 2): C66 summarises the outcome claims ('a very positive set of initial indicators of outcomes') and C71 the adult-worker claims without citing findings."
+  }
+ ]
+}

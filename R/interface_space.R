@@ -474,6 +474,83 @@ InterfaceSpace <- R6::R6Class(
       invisible(self)
     },
 
+    #' @description Record who proposed one or more decisions. The origin
+    #'   is kept beside the decision log, which stays unchanged; it does not
+    #'   affect any status. Each decision has at most one origin. Once an
+    #'   origin is recorded, `validate()` reports decisions without one.
+    #' @param decision Decision codes (`"D1"`, ...).
+    #' @param proposed_by Agent codes of the proposers, recycled to the
+    #'   length of `decision`.
+    #' @param accepted `"unchanged"` (the decision equals the proposal) or
+    #'   `"modified_by_author"` (the decision-maker changed the proposal or
+    #'   added the item), recycled.
+    #' @param source_file File holding the proposal (`"none"` when no file
+    #'   was kept), recycled.
+    #' @param note Free text, e.g. what the decision-maker changed, recycled.
+    #' @return The object, invisibly.
+    add_decision_origin = function(
+      decision,
+      proposed_by,
+      accepted = "unchanged",
+      source_file = "",
+      note = ""
+    ) {
+      decision <- trimws(as.character(decision))
+      n <- length(decision)
+      if (!n || anyNA(decision) || any(!nzchar(decision))) {
+        stop("`decision` must be non-empty decision codes.", call. = FALSE)
+      }
+      rec <- function(v, arg) {
+        v <- as.character(v)
+        v[is.na(v)] <- ""
+        if (!length(v) %in% c(1L, n)) {
+          stop("`", arg, "` must have length 1 or ", n, ".", call. = FALSE)
+        }
+        rep_len(trimws(v), n)
+      }
+      proposed_by <- rec(proposed_by, "proposed_by")
+      accepted <- rec(accepted, "accepted")
+      source_file <- rec(source_file, "source_file")
+      note <- rec(note, "note")
+      if (any(!nzchar(proposed_by))) {
+        stop("`proposed_by` must name an agent.", call. = FALSE)
+      }
+      bad <- setdiff(accepted, .accepted_values)
+      if (length(bad)) {
+        stop(
+          "`accepted` must be one of ",
+          paste(.accepted_values, collapse = ", "),
+          "; got ",
+          paste0("'", bad, "'", collapse = ", "),
+          ".",
+          call. = FALSE
+        )
+      }
+      dup <- decision[
+        duplicated(decision) | decision %in% private$tab$decision_origin$decision
+      ]
+      if (length(dup)) {
+        stop(
+          "Origin already recorded for decision(s): ",
+          paste(unique(dup), collapse = ", "),
+          ".",
+          call. = FALSE
+        )
+      }
+      private$tab$decision_origin <- data.table::rbindlist(list(
+        private$tab$decision_origin,
+        data.table::data.table(
+          decision = decision,
+          proposed_by = proposed_by,
+          accepted = accepted,
+          source_file = source_file,
+          note = note
+        )
+      ))
+      private$origin_on <- TRUE
+      invisible(self)
+    },
+
     # 4. tables -----
 
     #' @description Agents table.
@@ -521,8 +598,24 @@ InterfaceSpace <- R6::R6Class(
     },
 
     #' @description The decision log, in the order recorded.
-    #' @return A `data.table`.
-    decisions = function() data.table::copy(private$tab$decisions),
+    #' @return A `data.table` with columns `code`, `date`, `actor`, `action`,
+    #'   `rows`, `reason`, and the origin columns `proposed_by` and
+    #'   `accepted` (`NA` when no origin is recorded for the decision; see
+    #'   `add_decision_origin()`).
+    decisions = function() {
+      out <- data.table::copy(private$tab$decisions)
+      og <- private$tab$decision_origin
+      i <- match(out$code, og$decision)
+      out[, `:=`(proposed_by = og$proposed_by[i], accepted = og$accepted[i])]
+      out[]
+    },
+
+    #' @description The decision-origin table: who proposed each decision.
+    #' @return A `data.table` with columns `decision`, `proposed_by`,
+    #'   `accepted`, `source_file`, `note`.
+    decision_origin = function() {
+      data.table::copy(private$tab$decision_origin)
+    },
 
     # 5. roots and jointness -----
 
@@ -636,7 +729,10 @@ InterfaceSpace <- R6::R6Class(
     #'   `joint_claim_single_strand_fit` (endorsed joint claim with fit
     #'   single-strand or not recorded), `endorsed_claim_nonendorsed_finding`
     #'   (endorsed claim resting on a finding that is not endorsed),
-    #'   `transformation_output_unregistered`, `partition_not_crossing`.
+    #'   `transformation_output_unregistered`, `partition_not_crossing`;
+    #'   once a decision origin is recorded (see `add_decision_origin()`):
+    #'   `decision_without_origin`, `origin_unknown_decision`,
+    #'   `origin_unknown_agent`.
     validate = function() {
       v <- list()
       add <- function(check, row, note) {
@@ -723,6 +819,28 @@ InterfaceSpace <- R6::R6Class(
         sprintf("T:%s", bad$new_finding),
         "partition (rule 12) transformation recorded as not crossing strands"
       )
+      # decision origin, checked once an origin has been recorded
+      if (private$origin_on) {
+        og <- private$tab$decision_origin
+        bad <- dec[!code %in% og$decision]
+        add(
+          "decision_without_origin",
+          bad$code,
+          "no proposer recorded in the decision origin"
+        )
+        bad <- og[!decision %in% dec$code]
+        add(
+          "origin_unknown_decision",
+          bad$decision,
+          "origin recorded for a decision that is not in the log"
+        )
+        bad <- og[!proposed_by %in% ag$code]
+        add(
+          "origin_unknown_agent",
+          bad$decision,
+          sprintf("proposer '%s' is not a registered agent", bad$proposed_by)
+        )
+      }
       if (!length(v)) {
         return(data.table::data.table(
           check = character(),
@@ -731,6 +849,83 @@ InterfaceSpace <- R6::R6Class(
         ))
       }
       data.table::rbindlist(v)
+    },
+
+    #' @description Counts of decisions by origin, per table decided.
+    #' @param agent Code of the proposing agent whose proposals are counted
+    #'   (default `"A3"`, the decision-proposal and consistency model).
+    #' @return A `data.table` with one row per table decided (`eligibility`,
+    #'   `findings`, `transformations`, `claims`, `relations`) and a row
+    #'   `all`; columns `study`, `table`, `decisions` (decisions touching
+    #'   rows of the table; a decision on rows of several tables counts in
+    #'   each, once in `all`), `unchanged` (proposed by `agent`, recorded
+    #'   unchanged), `modified` (`accepted = "modified_by_author"`), `other`
+    #'   (proposed by another agent, recorded unchanged), `no_origin`, and
+    #'   `reversed_later` (decisions counted in `unchanged` with at least one
+    #'   row of the table decided the opposite way by a later decision).
+    origin_summary = function(agent = "A3") {
+      .check_scalar_string(agent, "agent")
+      dr <- data.table::copy(private$tab$decision_rows)
+      data.table::setorderv(dr, "seq")
+      dr[, reversed := {
+        a <- action
+        vapply(
+          seq_along(a),
+          function(i) any(a[-seq_len(i)] != a[i]),
+          logical(1)
+        )
+      }, by = row]
+      dr[, table := private$row_table(row)]
+      og <- private$tab$decision_origin
+      i <- match(dr$decision, og$decision)
+      dr[, `:=`(proposed_by = og$proposed_by[i], accepted = og$accepted[i])]
+      per <- dr[,
+        .(
+          proposed_by = proposed_by[1L],
+          accepted = accepted[1L],
+          reversed = any(reversed)
+        ),
+        by = .(table, decision)
+      ]
+      all <- per[,
+        .(
+          table = "all",
+          proposed_by = proposed_by[1L],
+          accepted = accepted[1L],
+          reversed = any(reversed)
+        ),
+        by = decision
+      ]
+      per <- data.table::rbindlist(list(per, all), use.names = TRUE)
+      tabs <- c(
+        "eligibility",
+        "findings",
+        "transformations",
+        "claims",
+        "relations",
+        "all"
+      )
+      out <- per[,
+        .(
+          decisions = .N,
+          unchanged = sum(proposed_by %in% agent & accepted %in% "unchanged"),
+          modified = sum(accepted %in% "modified_by_author"),
+          other = sum(!proposed_by %in% c(agent, NA) &
+                        accepted %in% "unchanged"),
+          no_origin = sum(is.na(proposed_by)),
+          reversed_later = sum(proposed_by %in% agent &
+                                 accepted %in% "unchanged" & reversed)
+        ),
+        by = table
+      ]
+      out <- out[data.table::data.table(table = tabs), on = "table"]
+      num <- setdiff(names(out), "table")
+      for (j in num) {
+        data.table::set(out, which(is.na(out[[j]])), j, 0L)
+      }
+      out[, study := private$study]
+      data.table::setcolorder(out, c("study", "table"))
+      out[]
     },
 
     # 7. outputs -----
@@ -865,8 +1060,22 @@ InterfaceSpace <- R6::R6Class(
     study = NULL,
     strict = TRUE,
     tab = NULL,
+    origin_on = FALSE,
 
     # 8. private helpers -----
+
+    # Table of each decided row key.
+    row_table = function(rows) {
+      t <- private$tab
+      out <- rep("unknown", length(rows))
+      out[rows %in% .reserved_rows] <- "eligibility"
+      out[rows %in% t$findings$code] <- "findings"
+      out[rows %in% sprintf("T:%s", t$transformations$new_finding)] <-
+        "transformations"
+      out[rows %in% t$claims$code] <- "claims"
+      out[rows %in% t$relations$code] <- "relations"
+      out
+    },
 
     row_keys = function() {
       c(

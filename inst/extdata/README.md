@@ -11,7 +11,8 @@ evaluations of public services (data licence: CC BY 4.0, see
 | `02_decision_proposal_prompt.md` | Prompt for the model that proposed decisions and correction rows (role A3). |
 | `03_consistency_prompt.md` | Prompt for the consistency pass across registers. |
 | `screening.csv` | Eligibility decisions on the candidate studies. |
-| `registers/<ID>/` | One register per study: six CSV tables and the notes `00_*.md`. |
+| `registers/<ID>/` | One register per study: six CSV tables, `decision_origin.csv`, the notes `00_*.md` and the proposal files `00_*.json`. |
+| `decision_origin.py` | Script that derives `decision_origin.csv` from `decisions.csv` and the proposal files (Python 3, standard library). |
 
 All files are UTF-8, comma-separated, with a header row and quoted
 values. Codes are never reused or renumbered and rows are never deleted;
@@ -33,7 +34,7 @@ corrections are new rows. Lists of codes are separated by `;`.
 
 | Column | Description |
 |---|---|
-| `code` | Agent code. `A1` author of the decisions; `A2` model that extracted candidate rows; `A3` model that proposed decisions and correction rows; `S1` the study's authors (source of the claims and of transformations done in the study). |
+| `code` | Agent code. `A1` author of the decisions; `A2` model that extracted candidate rows; `A3` model that proposed decisions and correction rows; `A4` main session model that wrote the first-round decision proposals of HLT-C2, HLT-C12 and PA-2.4 (appended in version 0.1.1; in HLT-C2 the code `A3` of the tables also covers correction rows C19-C20 and R11-R21 written by the main session, see the description of `A4`); `S1` the study's authors (source of the claims and of transformations done in the study). |
 | `name` | Person name, author list or model identifier. |
 | `type` | `person`, `model` or `algorithm`. |
 | `description` | Role, model version and prompt version. |
@@ -111,6 +112,36 @@ its own strand in addition to the roots of `made_from`.
 A later decision on the same row supersedes an earlier one. The `status`
 columns of the other tables equal the result of replaying the decisions in
 order.
+
+## registers/&lt;ID&gt;/decision_origin.csv
+
+Who proposed each decision of `decisions.csv` (one row per decision, same
+order). Added in version 0.1.1; `decisions.csv` is not changed.
+
+| Column | Description |
+|---|---|
+| `decision` | Decision code (`D1`, ...). |
+| `proposed_by` | Agent code of the proposer: `A3` (decision-proposal or consistency model), `A4` (main session model, proposals not saved to a file), `A1` (the author changed the A3 proposal or added the item). |
+| `accepted` | `unchanged` (the decision equals the proposal: same action, rows and reason) or `modified_by_author`. |
+| `source_file` | Proposal file holding the item: `00_decision_proposal.json`, `00_consistency_proposal.json`, `00_decision_final.json`, `00_consistency_final.json`, or `none`. |
+| `note` | For `modified_by_author`: the A3 items on the same rows and what the author changed (rows, action, reason), or that A3 proposed no item on those rows. |
+
+Derivation (`decision_origin.py`): a decision whose action, rows and reason
+equal an item of a `*_proposal.json` file is `A3`, `unchanged`; one that
+equals an item of a `*_final.json` file only is `A1`,
+`modified_by_author`; one that matches no file is `A4`, `unchanged`
+(allowed only for HLT-C2 D1-D7, HLT-C12 D1-D6 and PA-2.4 D1-D6).
+`read_register()` reads the file; `decision_origin_summary()` counts, per
+study and table, A3 proposals recorded unchanged, modified and reversed by a
+later decision.
+
+## registers/&lt;ID&gt;/00_*.json
+
+Proposal files read by `decision_origin.py`: `00_decision_proposal.json`
+and `00_consistency_proposal.json` (proposals of A3), `00_decision_final.json`
+and `00_consistency_final.json` (A3 proposals as modified by the author:
+HLT-C9, MD-C11, HLT-C12). Each holds `date`, `decisions` (items with
+`action`, `rows`, `reason`) and, for decision proposals, `eligibility`.
 
 ## registers/&lt;ID&gt;/00_*.md
 

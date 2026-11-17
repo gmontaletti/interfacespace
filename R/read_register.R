@@ -17,6 +17,13 @@
 #' a transformation is marked `partition = TRUE` when an `endorse` decision
 #' whose reason mentions "Rule 12" lists its row `T:<new_finding>`.
 #'
+#' When the folder holds `decision_origin.csv` (columns `decision`,
+#' `proposed_by`, `accepted`, `source_file`, `note`), it is read with
+#' `add_decision_origin()`: `decisions()` then shows who proposed each
+#' decision and whether the decision-maker changed the proposal, and
+#' `validate()` reports decisions without an origin. The file is optional;
+#' `decisions.csv` itself is never changed.
+#'
 #' The `rows` field of a decision is a `;`-separated list of codes. Because a
 #' transformation output may be a free-text label that itself contains `;`,
 #' adjacent pieces are rejoined until they match a registered row.
@@ -126,6 +133,18 @@ read_register <- function(
       reason = dec$reason[i],
       date = dec$date[i],
       code = dec$code[i]
+    )
+  }
+
+  # 1.6 decision origin (optional file) -----
+  og <- .read_decision_origin(dir)
+  if (!is.null(og) && nrow(og)) {
+    x$add_decision_origin(
+      og$decision,
+      og$proposed_by,
+      accepted = og$accepted,
+      source_file = og$source_file,
+      note = og$note
     )
   }
   x
@@ -248,6 +267,34 @@ bundled_registers <- function(id = NULL) {
     dt
   })
   stats::setNames(out, names(.register_columns))
+}
+
+# Read decision_origin.csv when present; NULL otherwise.
+.read_decision_origin <- function(dir) {
+  path <- file.path(dir, "decision_origin.csv")
+  if (!file.exists(path)) {
+    return(NULL)
+  }
+  dt <- data.table::fread(
+    path,
+    colClasses = "character",
+    na.strings = NULL,
+    encoding = "UTF-8",
+    fill = TRUE
+  )
+  miss <- setdiff(.origin_columns, names(dt))
+  if (length(miss)) {
+    stop(
+      "decision_origin.csv lacks column(s): ",
+      paste(miss, collapse = ", "),
+      ".",
+      call. = FALSE
+    )
+  }
+  for (j in .origin_columns) {
+    data.table::set(dt, which(is.na(dt[[j]])), j, "")
+  }
+  dt[, .origin_columns, with = FALSE]
 }
 
 # Split a decision's rows field on ';', rejoining adjacent pieces until they

@@ -3,3 +3,4 @@
 "A2","claude-opus-5-5","model","LLM extractor; extraction prompt v2 (17 November 2026)"
 "S1","Gazley B","person","Author of the study (Public Administration Review 2008, 68(1):141-154), source of the claims"
 "A3","claude-opus-5-5 (decision-proposal and consistency prompts)","model","Proposes decisions and correction rows applying coding rules 1-13"
+"A4","claude-opus-5-5 (main session)","model","Main (orchestrating) session; wrote the first-round decision proposals before the decision-proposal and consistency prompts existed (no proposal file saved); the author A1 confirmed them. Used in decision_origin.csv."

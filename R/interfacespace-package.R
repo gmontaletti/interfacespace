@@ -15,6 +15,11 @@
 # 1. global variables used in data.table expressions -----
 
 utils::globalVariables(c(
+  "accepted",
+  "decision",
+  "proposed_by",
+  "reversed",
+  "table",
   "action",
   "claim",
   "code",

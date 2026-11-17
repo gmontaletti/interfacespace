@@ -1,0 +1,11 @@
+{"date":"2026-11-17","decisions":[
+{"action":"endorse","rows":["C21"],"reason":"Rule 11 (revised): C19 (abstract Conclusions, p.1) and C20 (Conclusion, p.11) make the same assertion, that this study showed positive outcomes of the service; the Discussion (p.10) repeats it. One row listing every location; as a summary of C1-C5 it follows rule 2 (empty rests_on)."},
+{"action":"reject","rows":["C19","C20"],"reason":"Rule 11 (revised): same assertion recorded twice; replaced by C21."},
+{"action":"endorse","rows":["R22","R23","R24","R25","R26"],"reason":"Rule 2: C21 summarises the outcome claims C1-C5; covers relations re-anchored from C19/C20."},
+{"action":"reject","rows":["R11","R12","R13","R14","R15","R16","R17","R18","R19","R20"],"reason":"Anchored on C19 or C20, rejected under rule 11; replaced by R22-R26."},
+{"action":"reject","rows":["R21"],"reason":"Anchored on rejected C19. Not re-anchored: rule 10, the basis (p.10 'shows very positive and promising outcomes [...] and moreover demonstrates the potential') joins two things the research shows with 'moreover', an additive link, not an inferential marker; in the abstract the two sentences are only in sequence."},
+{"action":"endorse","rows":["C22"],"reason":"Rule 2 and rule 11 (revised, last clause): C14 summarises the process claims C8 and C9 without citing findings at that point; rests_on empty. The Discussion argues C8 and C9 separately, not C14 (rule 7 does not apply)."},
+{"action":"reject","rows":["C14"],"reason":"Rule 2: summary claim recorded with rests_on F19;F20;F22;F24;F25; replaced by C22 with empty rests_on."},
+{"action":"endorse","rows":["R27","R28"],"reason":"Rule 2: C22 covers C8 and C9; links stated at p.11."},
+{"action":"reject","rows":["R6","R7"],"reason":"Anchored on rejected C14; replaced by R27 and R28."}
+]}

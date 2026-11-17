@@ -85,6 +85,23 @@ hlt
 head(hlt$decisions()[, .(code, action, rows, reason)], 4)
 ```
 
+### Who proposed each decision
+
+Every decision is signed by the author (`A1`). `decision_origin.csv`
+records who proposed it: the model `A3`, the main session model `A4`
+(first rounds of three registers), or the author when the A3 proposal was
+changed. `decisions()` shows the origin beside each decision, and
+`decision_origin_summary()` counts, per study and table, the A3 proposals
+recorded unchanged, those modified by the author and those reversed by a
+later decision.
+
+```{r origin}
+hlt$decisions()[, .N, by = .(proposed_by, accepted)]
+org <- decision_origin_summary(bundled_registers())
+org[table == "all", .(study, decisions, unchanged, modified, other,
+                      reversed_later)]
+```
+
 ### Joint claims
 
 ```{r joint}

@@ -34,6 +34,13 @@ quantitative measure) is detected as in the reference implementation:
 a transformation is marked \code{partition = TRUE} when an \code{endorse} decision
 whose reason mentions "Rule 12" lists its row \verb{T:<new_finding>}.
 
+When the folder holds \code{decision_origin.csv} (columns \code{decision},
+\code{proposed_by}, \code{accepted}, \code{source_file}, \code{note}), it is read with
+\code{add_decision_origin()}: \code{decisions()} then shows who proposed each
+decision and whether the decision-maker changed the proposal, and
+\code{validate()} reports decisions without an origin. The file is optional;
+\code{decisions.csv} itself is never changed.
+
 The \code{rows} field of a decision is a \verb{;}-separated list of codes. Because a
 transformation output may be a free-text label that itself contains \verb{;},
 adjacent pieces are rejoined until they match a registered row.

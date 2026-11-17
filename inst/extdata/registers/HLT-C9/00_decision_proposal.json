@@ -1,0 +1,166 @@
+{
+ "date": "2026-11-17",
+ "eligibility": {
+  "reference": "McCullough JM, Eisen-Cohen E, Lott B (2020). Barriers and facilitators to intraorganizational collaboration in public health: Relational coordination across public health services targeting individuals and populations. Health Care Management Review 45(1), 60-72. doi:10.1097/HMR.0000000000000203",
+  "file": "HLT-C9_McCullough_2020_RelationalCoordination.pdf",
+  "decision": "eligible",
+  "reason": "Collaboration among services of a governmental local public health department; reports Q (interview themes) and N (relational coordination survey) findings."
+ },
+ "decisions": [
+  {
+   "action": "endorse",
+   "rows": [
+    "eligibility"
+   ],
+   "reason": "Collaboration (relational coordination) among the 18 services of a county public health department; relational coordination survey with ANOVA/t tests (N) and 17 key informant interviews with thematic coding (Q); convergent mixed-methods design (p.62-63)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "F13",
+    "F14",
+    "F15",
+    "F16",
+    "F17"
+   ],
+   "reason": "Findings as reported in Results (p.63-68), Tables 2-4 and Discussion p.69 (F9); strand correct; each carries page and verbatim quote."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "F18",
+    "F19",
+    "F20"
+   ],
+   "reason": "Theme counts reported by S1 (text p.64, Tables 3-4); main reported results kept as N findings."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "F21",
+    "F22"
+   ],
+   "reason": "Main reported results for Hypothesis 3 (p.64-65, p.68-69): themes compared across services with higher vs lower relational coordination."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "T:F18",
+    "T:F19",
+    "T:F20"
+   ],
+   "reason": "Quantitizing done by S1 (interviewees per theme, natural cut point, p.63); the counts are made only from Q themes, so their roots are Q only and they do not make a claim joint (not a rule-12 case)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "T:F21",
+    "T:F22"
+   ],
+   "reason": "Rule 12: interview themes compared across service groups defined by the relational coordination score (linked at service level, p.63); roots in both strands. No headline claim rests on F21 or F22."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C1",
+    "C4",
+    "C5",
+    "C12"
+   ],
+   "reason": "Rule 8: restate the reported result on the same measure (F2; F6; F7; F3). C1 is one row for abstract Results and Conclusion (rule 11)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C2",
+    "C3"
+   ],
+   "reason": "Rule 8, rests_on F4;F5 as reported. Kept as written, but the wording overstates the reported tests (curative 2.64 vs all others p < .01; population 3.17 and preventive 3.06 not different, p.63-64): reporting inconsistency to be noted. C3 is one row for three locations (rule 11)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C6",
+    "C15",
+    "C16",
+    "C17"
+   ],
+   "reason": "rests_on as used in the text (rule 3): C6 facilitator themes; C15 'qualitative findings suggest' (F11, F15, F16); C16 culture fostered by leaders (F12); C17 'Demonstrated by the number of staff who mentioned this strategy' (F18 from F10). All Q roots only: single-strand."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C7"
+   ],
+   "reason": "Rule 7: the self-interest barrier is argued with the survey results at p.68 ('Consistent with the quantitative findings that showed significant differences [...] across service focus area'; 'consistent with lower MCDPH domain scores in frequent communication (2.84), shared knowledge (2.88), and shared goals (3.12)'), so F2, F7, F8 join F14-F17. Joint, fit confirm."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C10"
+   ],
+   "reason": "Rule 7: the Discussion argues the same claim with findings: survey shows shared knowledge and frequency lower than mutual respect, 'these latter areas may offer opportunity' (p.69, F6, F7); cloud meetings influence 'virtually every relational coordination domain' (p.70), resting on the Results theme (F10, p.64). Joint, fit expand."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C8"
+   ],
+   "reason": "Rule 7: the known vs emergent classification is argued in the Discussion p.69 with the interview themes (structure, culture, social identity, self-interest, slack resources, cloud meetings: F10-F13, F15, F16). Q only: single-strand."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C9",
+    "C11",
+    "C13",
+    "C14",
+    "C18"
+   ],
+   "reason": "Practice Implications (abstract p.61; closing section p.70-71, used as conclusions): recommendations for practice remain headline claims (rule 6). No finding cited at these points: empty rests_on (C9 is a summary, rule 2)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "R1",
+    "R2"
+   ],
+   "reason": "Covers shown in the abstract's argument: the general result (C1) is followed by its specification (C2 after a semicolon; C3 as the next Conclusion sentence)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "R3",
+    "R4"
+   ],
+   "reason": "Covers: the abstract Conclusion restates the Results facilitators and barriers ('facilitated and impeded by [...] such as purposive cross-service meetings and organizational culture'). Kept alongside C8's rule-7 rests_on, as C8 adds the known/emergent assertion."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "R5",
+    "R6"
+   ],
+   "reason": "Rule 2: the abstract Practice Implications sentence summarises the closing section; 'deliberate support from senior management' covers the public prioritising of collaboration (C16) and the meetings 'initiated with a supportive infrastructure' (C17, p.70-71)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "R7"
+   ],
+   "reason": "Rule 2, weakest link: the second half of the same abstract sentence ('structured activities') maps on the purposive, cross-programmatic meetings of p.70-71, the only structured activity in the closing section; the shared knowledge and mutual respect link rests on p.64."
+  }
+ ]
+}

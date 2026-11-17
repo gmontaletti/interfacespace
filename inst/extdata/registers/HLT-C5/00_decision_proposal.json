@@ -1,0 +1,353 @@
+{
+ "date": "2026-11-17",
+ "eligibility": {
+  "reference": "Raine R, Wallace I, Nic a' Bháird C, et al. (2014). Improving the effectiveness of multidisciplinary team meetings for patients with chronic diseases: a prospective observational study. Health Services and Delivery Research 2(37). doi:10.3310/hsdr02370",
+  "file": "HLT-C5_Raine_2014_MDTMeetings.pdf",
+  "decision": "eligible",
+  "reason": "Relationships among professionals and between team and patients in NHS MDT meetings; reports Q and N findings."
+ },
+ "decisions": [
+  {
+   "action": "endorse",
+   "rows": [
+    "eligibility"
+   ],
+   "reason": "Weekly MDT meetings of 12 NHS chronic disease teams (relations among professionals and between team and patients); regression on 2512 patients, TCI, panel ratings (N) and thematic analysis of 370 meetings and 73 interviews (Q)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "F13",
+    "F14",
+    "F15",
+    "F16",
+    "F17",
+    "F18",
+    "F19",
+    "F20",
+    "F21",
+    "F22",
+    "F23",
+    "F24",
+    "F25",
+    "F26",
+    "F27",
+    "F28",
+    "F29",
+    "F30",
+    "F31",
+    "F32",
+    "F33",
+    "F34",
+    "F35",
+    "F36",
+    "F37",
+    "F38",
+    "F39",
+    "F40",
+    "F41",
+    "F42",
+    "F43",
+    "F44",
+    "F45",
+    "F46",
+    "F47",
+    "F49",
+    "F50",
+    "F51",
+    "F52",
+    "F53",
+    "F54",
+    "F55"
+   ],
+   "reason": "Findings as reported, with page references and quotes. F46 kept as the Q output of the analytic conferences (p.76); F47, F49, F50, F52, F54, F55 are panel ratings, new N data (rule 13); F51 and F53 are Q from the consensus meeting transcript."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "F48"
+   ],
+   "reason": "Not a finding: panellists rated level of support only (p.77); no feasibility rating is reported, so the p.80 sentence restates claim C11 without data."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "T:F15",
+    "T:F16",
+    "T:F17",
+    "T:F18",
+    "T:F19"
+   ],
+   "reason": "Rule 12: qualitative themes compared across teams grouped by measured implementation rate (F3) or by number of professional groups (F6, F7); F15-F19 root in both strands."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "T:F46"
+   ],
+   "reason": "Rules 9 and 13: turning metathemes and quantitative results into 68 statements is instrument development, a design-level interface point for the notes, not a transformation of findings."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "T:F47",
+    "T:F48",
+    "T:F49",
+    "T:F50",
+    "T:F52",
+    "T:F54",
+    "T:F55"
+   ],
+   "reason": "Rule 13: panel ratings of the statements are new N data, not transformations of F46; the study 1 to study 2 chain is a design-level note."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C46",
+    "C47",
+    "C48",
+    "C49",
+    "C50",
+    "C72",
+    "C74"
+   ],
+   "reason": "Rule 6: recommendations for future research, not headline claims."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C65"
+   ],
+   "reason": "Rule 6: under 'Future research priorities' (p.88), concerns the design of future interventions; research agenda, not a practice recommendation."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C11"
+   ],
+   "reason": "rests_on F48, which is not a finding; replaced by C76 with empty rests_on (no finding in the text)."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C60"
+   ],
+   "reason": "rests_on wrongly empty: rule 7 (Discussion p.69 states that the highest-implementing teams were the most medically dominated) and rule 8 (same measure as F3, same theme as F21); replaced by C77."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C62"
+   ],
+   "reason": "rests_on wrongly empty: rule 7 (Discussion p.73) and rule 8 (F13 gradient in cancer teams, F16 guideline reference); replaced by C78."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C64"
+   ],
+   "reason": "Two separable assertions (rule 1), each restating panel results (rules 7, 8: Chapter 6 p.82 and p.85); replaced by C79 (F52, F53) and C80 (F50)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C4"
+   ],
+   "reason": "Text check: SS Results p.xxvi-xxvii reports clear goals from the high- vs lower-implementing comparison and then 'Implementation was also more likely in MDTs with a good team climate' (TCI) as a separate sentence; C4 is the qualitative comparison, C5 carries the TCI result."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C15"
+   ],
+   "reason": "Claim kept as written; reporting inconsistency noted: Table 12 (F14) gives patient/family choice 15%, below 'other' (28%) and 'reason not given' (21%), so 'commonly' overstates the table."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C19"
+   ],
+   "reason": "Claim kept with rests_on F1; inconsistency noted: SS gives median attendees 5-17 and two to six disciplines, Chapter 3 (p.23, Table 7) gives meeting size 5-28 and one to seven groups."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C43",
+    "C53"
+   ],
+   "reason": "Headline claims with no finding in the text (no mediation analysis; no comparison of teams against the 21 indications); empty rests_on, recorded as unsupported."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C76",
+    "C77",
+    "C78",
+    "C79",
+    "C80"
+   ],
+   "reason": "Correction rows: C76 (C11 with empty rests_on), C77 and C78 (rules 7, 8), C79 and C80 (rule 1 split of C64, rules 7, 8)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C1",
+    "C2",
+    "C3",
+    "C5",
+    "C6",
+    "C7",
+    "C8",
+    "C9",
+    "C10",
+    "C12",
+    "C13",
+    "C14",
+    "C16",
+    "C17",
+    "C18",
+    "C20",
+    "C21",
+    "C22",
+    "C23",
+    "C24",
+    "C25",
+    "C26",
+    "C27",
+    "C28",
+    "C29",
+    "C30",
+    "C31",
+    "C32",
+    "C33",
+    "C34",
+    "C35",
+    "C36",
+    "C37",
+    "C38",
+    "C39",
+    "C40",
+    "C41",
+    "C42",
+    "C44",
+    "C45",
+    "C51",
+    "C52",
+    "C54",
+    "C55",
+    "C56",
+    "C57",
+    "C58",
+    "C59",
+    "C61",
+    "C63",
+    "C66",
+    "C67",
+    "C68",
+    "C69",
+    "C70",
+    "C71",
+    "C73",
+    "C75"
+   ],
+   "reason": "Headline claims from abstract, scientific summary and Chapter 7 (one row per repeated claim, rule 11); rests_on follows rules 2, 3, 7 and 8 (C16 rule 7, Theme 5 p.44-45); judgement and summary claims have empty rests_on. C63, C66-C71 sit under 'Future research priorities' but state results, so rule 6 does not apply."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R7",
+    "R8",
+    "R9",
+    "R10",
+    "R11",
+    "R12",
+    "R13",
+    "R14",
+    "R15",
+    "R16",
+    "R17",
+    "R18",
+    "R19",
+    "R20",
+    "R21",
+    "R22",
+    "R24",
+    "R25",
+    "R26",
+    "R27",
+    "R28",
+    "R29",
+    "R30",
+    "R31",
+    "R32",
+    "R33",
+    "R34",
+    "R35",
+    "R36",
+    "R37",
+    "R38"
+   ],
+   "reason": "Covers relations of summary claims (rule 2) stated in the text; R35-R36 marked 'Taken together'."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "R23"
+   ],
+   "reason": "Points to rejected C11; replaced by R49."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "R49"
+   ],
+   "reason": "Correction of R23: C52 covers C76."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "R39",
+    "R40",
+    "R41"
+   ],
+   "reason": "Rule 10: the link rests on sentence order only (SS p.xxvi-xxvii), with no marker such as therefore or this suggests."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "R42",
+    "R43"
+   ],
+   "reason": "Rule 10: explicit pointer, Chapter 6 p.82 'our findings illustrate that there is scope for learning between specialties' after the 31% strong-agreement result."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "R44",
+    "R45",
+    "R46",
+    "R47",
+    "R48"
+   ],
+   "reason": "Point to rejected research-agenda claims (rule 6)."
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+{"date":"2026-11-17","decisions":[
+{"action":"endorse","rows":["C26"],"reason":"Rule 11: C2 (abstract), C13 and C15 (conclusion, p.150) make the same assertion (partnerships weakly collaborative, not between equals) and become one row listing both locations. Rules 7-8: rests on F22, F25 (shared decision making, argued in the conclusion via C14) and F9 (resources, p.146). F4 not carried over (rule 3): it measures scope of activity, and p.146 calls the activities frequently collaborative."},
+{"action":"reject","rows":["C2","C13","C15"],"reason":"Rule 11: replaced by the single row C26."},
+{"action":"endorse","rows":["R6"],"reason":"Rule 2 / rule 4: C26 covers C14, which narrows it to shared decision making (p.150, 'a key ingredient of collaboration'; 'In short'). Replaces R3 and R4."},
+{"action":"reject","rows":["R3","R4"],"reason":"Point to C13 and C15, rejected under rule 11; the link is carried by R6."},
+{"action":"reject","rows":["R2"],"reason":"Rule 10: C9 and C10 are adjacent sentences (p.150) with no marker of the link (no therefore, so, this suggests); sequence alone is not a relation."}
+]}

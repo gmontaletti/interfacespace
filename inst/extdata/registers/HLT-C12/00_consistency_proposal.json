@@ -1,0 +1,8 @@
+{"date":"2026-11-17","decisions":[
+{"action":"endorse","rows":["C40","C41"],"reason":"Rule 11 (revised): the alliance result (abstract Results, abstract Conclusions, Implications p.11) and the satisfaction result (same three places) are each the same assertion in different wording; one row each listing every location, resting on F1 and F2 as the Results sentence does."},
+{"action":"reject","rows":["C1","C11","C17","C2","C12","C16"],"reason":"Rule 11 (revised): repeats of one assertion, superseded by C40 (alliance) and C41 (satisfaction). C11, C12, C16, C17 restate a single result each, so rule 2 does not apply to them."},
+{"action":"reject","rows":["R1","R2","R7","R8"],"reason":"Rule 11: covers relations between restatements of the same assertion; after the merge they would link a claim to itself."},
+{"action":"reject","rows":["R3","R4","R5","R6","R16","R17"],"reason":"Rule 11: they point to claims rejected in the merge; re-pointed to C40 and C41 by R21-R26."},
+{"action":"endorse","rows":["R21","R22","R25","R26"],"reason":"Re-pointed covers relations: C13 narrows the merged results (rule 4); C37 summarises several different comparative results (rule 2)."},
+{"action":"endorse","rows":["R23","R24"],"reason":"Rule 10: the link is marked by an explicit pointer, 'This finding provides some support for the expansion of crisis house provision' (p.1); re-pointed from R5 and R6."}
+]}

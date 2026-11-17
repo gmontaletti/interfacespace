@@ -1,0 +1,238 @@
+{
+ "date": "2026-11-17",
+ "eligibility": {
+  "reference": "McCracken K, Priest S, FitzSimons A, Bracewell K, Torchia K, Parry W (Opcit Research), with Stanley N (University of Central Lancashire) (2017). Evaluation of Pause. Research report, July 2017. Children's Social Care Innovation Programme Evaluation Report 49. Department for Education, DFE-RR595.",
+  "file": "SOC-C15_McCracken_2017_Pause.pdf",
+  "decision": "eligible",
+  "reason": "Relationships between Practitioners and women and between Pause and partner agencies in a DfE-funded local authority programme; Poisson count models, CMF longitudinal analysis, CBA (N) and interviews, focus groups, case studies (Q)."
+ },
+ "decisions": [
+  {
+   "action": "endorse",
+   "rows": [
+    "eligibility"
+   ],
+   "reason": "Pause, a voluntary programme funded by the DfE Innovation Programme in 7 local authority Practices (p.6); relations Practitioner-woman and Pause-partner agencies; N findings (pregnancy models, CMFs, CBA) and Q findings (interviews, case studies)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "F13",
+    "F14",
+    "F15",
+    "F16",
+    "F17",
+    "F18",
+    "F19",
+    "F20",
+    "F21",
+    "F22",
+    "F23",
+    "F24",
+    "F25",
+    "F26",
+    "F27",
+    "F28",
+    "F29",
+    "F30",
+    "F31",
+    "F32",
+    "F33",
+    "F34",
+    "F35",
+    "F36",
+    "F37",
+    "F38",
+    "F39",
+    "F40",
+    "F41",
+    "F42",
+    "F43",
+    "F44",
+    "F45",
+    "F46",
+    "F47",
+    "F48",
+    "F49",
+    "F50",
+    "F51",
+    "F52"
+   ],
+   "reason": "Findings as reported, with page references and verbatim quotes (five quotes span a page break in the extracted text). F28 and F30 are counted interview responses (N)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "T:F28",
+    "T:F30"
+   ],
+   "reason": "Interview responses coded and counted by S1 (quantitized). Not a rule-12 case-group comparison, so the roots stay Q only (F27, F29); no headline claim uses F28 or F30."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "T:F4",
+    "T:F5"
+   ],
+   "reason": "N to N modelling by S1 (pregnancies avoided as proxy for removals; exits from DV, drinking and drug categories costed)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C1"
+   ],
+   "reason": "Rule 2: names both strands but cites no findings at this point (ES p.7, p.58); empty rests_on, links recorded as covers. Rule 11: ES and conclusions wordings are one assertion. Not joint: roots are not traced through covers relations."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C2",
+    "C4",
+    "C7",
+    "C8",
+    "C9",
+    "C10",
+    "C20",
+    "C21"
+   ],
+   "reason": "Rests on the findings the text uses (rule 3); ES and conclusions locations merged where repeated (rule 11). C4 roots in F1, F2 through T:F4 (N only)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C5",
+    "C6",
+    "C19"
+   ],
+   "reason": "Rests on N and Q findings named by the text: C5 and C6 'Qualitative data and data from CMFs' (ES p.8); C6 N part is the reductions while in treatment (6 of 12 drinkers, 2 of 9 drug users; p.34 'In some cases, these reductions occurred while women were engaging with alcohol and substance misuse services', p.37-38) and Q part F35 (p.45); C19 restates baseline CMF results and the baseline grief theme (rule 8). Joint, confirm."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C12"
+   ],
+   "reason": "Rests on interview and case-study findings F42, F52 ('Qualitative data show'). The CMF self-esteem result F14 (mixed: 44% improved, 40% decreased) is not linked by the authors and stays out of rests_on (rule 3); recorded as a note, fit single-strand."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C13",
+    "C14",
+    "C15"
+   ],
+   "reason": "Rests on the Q findings the text uses. C15: the ES says 'Analysis of qualitative data'; no N finding is used for the mechanisms; one assertion with a list of three mechanisms (rule 5)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C3",
+    "C16",
+    "C18",
+    "C22",
+    "C24"
+   ],
+   "reason": "Empty rests_on (rule 3): no finding given at that point. C3 'given the women's histories' points to no reported finding on removal per pregnancy (F6 noted); C16 and C22 are backed by marked links (R21, R14, R15); C18 'evidence from this evaluation suggests' without a pointer; C24 is backed by C1 and C4 ('Given')."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C23",
+    "C25",
+    "C26",
+    "C28",
+    "C29",
+    "C30",
+    "C31",
+    "C32",
+    "C33",
+    "C35",
+    "C36",
+    "C38",
+    "C39"
+   ],
+   "reason": "Practice recommendations and enabling factors, kept as headline claims (rule 6); rest on the p.52-54 'lessons' and process findings that state the same content (rule 8)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C27",
+    "C34",
+    "C37"
+   ],
+   "reason": "Weak rule-8 matches accepted: C27 restates F37 (support deliberately unspecified to allow flexibility and tailoring, p.45); C34 restates F26 (p.30 names health, housing, mental health and substance misuse services as hard to access) and F33 (mental health, housing slow to change); C37 restates F46 on the expected induction package, the replication benefit has no finding."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C11"
+   ],
+   "reason": "Rule 11 boundary and rule 2: C11 (p.59) summarises four different claims (C7-C10: housing, alcohol, drugs, DV) without citing findings at that point; not a repeat and not a rule-8 restatement. 'safeguarded themselves against violence and abuse' also goes beyond F16. Replaced by C40 (empty rests_on) with covers R17-R20."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C17"
+   ],
+   "reason": "rests_on incomplete: 'promote healthy coping mechanisms' is reported in F40 (p.48, quote names drug use). Replaced by C41 (F40 added). The reductions restate F17, F18 on the same measures (rule 8), so rests_on is not empty."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C40",
+    "C41"
+   ],
+   "reason": "Correction rows for C11 (rule 2) and C17 (rule 8, F40 added). C41 is joint (N F17, F18; Q process findings), fit expand."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R5",
+    "R6",
+    "R8",
+    "R9",
+    "R10",
+    "R16",
+    "R17",
+    "R18",
+    "R19",
+    "R20"
+   ],
+   "reason": "Rule 2: covers from summary claims C1 and C40 to the claims they summarise."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "R11",
+    "R12",
+    "R14",
+    "R15",
+    "R21"
+   ],
+   "reason": "Rule 10: link marked in the text ('Given', p.9 and p.60; 'therefore', p.58; 'To illustrate', p.59)."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "R7",
+    "R13"
+   ],
+   "reason": "Point to rejected claims C11 and C17; replaced by R16 and R21."
+  }
+ ]
+}

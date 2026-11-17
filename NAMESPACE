@@ -2,6 +2,7 @@
 
 export(InterfaceSpace)
 export(bundled_registers)
+export(decision_origin_summary)
 export(read_register)
 export(register_counts)
 importFrom(R6,R6Class)

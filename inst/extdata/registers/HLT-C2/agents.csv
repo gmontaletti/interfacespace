@@ -3,3 +3,4 @@
 "A2","claude-opus-5-5","model","LLM extractor; extraction prompt v1 (17 November 2026)"
 "S1","Woodall J, Trigwell J, Bunyan A-M, Raine G, Eaton V, Davis J, Hancock L, Cunningham M, Wilkinson S","person","Authors of the study (BMC Health Services Research 2018, 18:604), source of the claims"
 "A3","Orchestrating session","model","claude-opus-5-5, main session; proposes correction rows applying author coding rules 1-4 (protocol v0.3)"
+"A4","claude-opus-5-5 (main session)","model","Main (orchestrating) session; wrote the first-round decision proposals before the decision-proposal and consistency prompts existed (no proposal file saved); the author A1 confirmed them. Used in decision_origin.csv. In this register the code A3 of the tables was assigned to this session before the consistency pass; correction rows C19-C20 and R11-R21 come from this session, C21-C22 and R22-R28 from the consistency prompt (00_consistency_proposal.json)."

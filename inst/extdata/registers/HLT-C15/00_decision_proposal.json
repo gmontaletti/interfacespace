@@ -1,0 +1,458 @@
+{
+ "date": "2026-11-17",
+ "eligibility": {
+  "reference": "Gulliford, Naithani & Morgan (2006)",
+  "file": "HLT-C15_Gulliford_2006_ContinuityCare.pdf",
+  "decision": "eligible",
+  "reason": "Continuity of care between patients with type 2 diabetes and NHS general practice and hospital diabetes services; interviews with 25 patients, 7 carers, 12 South Asian patients and 25 professionals, patient survey and cohort (n=209) and professional postal survey (n=177)."
+ },
+ "decisions": [
+  {
+   "action": "endorse",
+   "rows": [
+    "eligibility"
+   ],
+   "reason": "Continuity of care between patients with type 2 diabetes and NHS general practice and hospital diabetes services; interviews with 25 patients, 7 carers, 12 South Asian patients and 25 professionals, patient survey and cohort (n=209) and professional postal survey (n=177)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "F1",
+    "F2",
+    "F3",
+    "F4",
+    "F5",
+    "F6",
+    "F7",
+    "F8",
+    "F9",
+    "F10",
+    "F11",
+    "F12",
+    "F13",
+    "F14",
+    "F15",
+    "F16",
+    "F17",
+    "F18",
+    "F19",
+    "F20",
+    "F21",
+    "F22",
+    "F23",
+    "F24",
+    "F25",
+    "F26",
+    "F27",
+    "F28",
+    "F29",
+    "F30",
+    "F31",
+    "F32",
+    "F33",
+    "F34",
+    "F35",
+    "F36",
+    "F37",
+    "F38",
+    "F39",
+    "F40",
+    "F41",
+    "F42",
+    "F43",
+    "F44",
+    "F45",
+    "F46",
+    "F47",
+    "F48",
+    "F49",
+    "F50",
+    "F51"
+   ],
+   "reason": "Findings as reported, with page references and quotes; strands correct (F51 compares the two questionnaires, N)."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "T:instrument: ECC-DM patient questionnaire (19 items, 4 sub-domains); not a registered finding",
+    "T:instrument: professional continuity-in-delivery questionnaire (28 items, 5 sub-domains); not a registered finding"
+   ],
+   "reason": "Rule 9: interview themes used to write questionnaire items is a design-level interface point recorded in the notes, not a transformation of findings; ECC-DM and professional-questionnaire findings stay N roots."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5",
+    "C6",
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C35",
+    "C36",
+    "C37",
+    "C38",
+    "C40",
+    "C42",
+    "C43",
+    "C44",
+    "C45",
+    "C46",
+    "C48"
+   ],
+   "reason": "Headline claims (executive summary); rests_on is the finding the text reports at that point (rule 3); each assertion stated once in the headline sections."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C8",
+    "C9",
+    "C20",
+    "C21",
+    "C23",
+    "C24",
+    "C64"
+   ],
+   "reason": "Rule 8: each restates a single reported result on the same measure or theme (descriptive statistics C8, C9, C20, C21; C23, C24 already list executive summary and 11.6; C64) and rests on that finding."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C16",
+    "C49",
+    "C53",
+    "C54",
+    "C62"
+   ],
+   "reason": "Rule 2: summary claims with empty rests_on; links to the claims they summarise are recorded as covers. C16 and C49 already list every location (rule 11)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C50",
+    "C57"
+   ],
+   "reason": "Joint claims as stated; C50 rests on F43 and F51 as argued at p.138 (rule 7); C57 is a stated discrepancy (discord)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C28",
+    "C29",
+    "C33",
+    "C34",
+    "C51",
+    "C58",
+    "C59",
+    "C66",
+    "C68",
+    "C69",
+    "C70",
+    "C71",
+    "C72",
+    "C74"
+   ],
+   "reason": "Headline claims resting on the authors' reasoning, inference or literature; no finding cited, so rests_on is empty."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C75",
+    "C79",
+    "C80",
+    "C82",
+    "C83",
+    "C85",
+    "C86",
+    "C87"
+   ],
+   "reason": "Recommendations for practice or policy remain headline claims (rule 6); no finding cited."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C73",
+    "C78",
+    "C81",
+    "C84",
+    "C88"
+   ],
+   "reason": "Rule 6: research agenda (further research, further investigation), not a headline claim."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C7",
+    "C63",
+    "C41",
+    "C77",
+    "C65",
+    "C76"
+   ],
+   "reason": "Rule 11: the same claim in executive summary, Section 11 and Section 12 is one row; replaced by C89 (C7, C63), C92 (C41, C77) and C95 (C65, C76)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C89",
+    "C92",
+    "C95"
+   ],
+   "reason": "Rule 11: one row listing every location; rests_on unchanged from the merged rows."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C60",
+    "C61"
+   ],
+   "reason": "Rule 7: rests_on incomplete; the same claim is argued with F51 at p.138; replaced by C93, C94."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C93",
+    "C94"
+   ],
+   "reason": "Rule 7: rest on the finding the text argues them with (F51, N)."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C14",
+    "C19",
+    "C55",
+    "C90"
+   ],
+   "reason": "Rule 11 (author boundary): 'we found' (C14, p.8), 'we conclude' (C19, p.8-9; 11.6) and the 11.1 triangulation example (C55) state the same assertion, lower continuity in hospital settings; C90 was a rule 7 correction of C19 only. Replaced by C96, which lists every location and rests on the union of findings used there (F17; F7, p.79/p.84; F50, 11.1)."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C39",
+    "C56",
+    "C91"
+   ],
+   "reason": "Rule 11: the executive summary (C39, corrected as C91 under rule 7) and 11.1 (C56) state the same assertion, language differences as a barrier to continuity; replaced by C97 (F36, F21)."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C15",
+    "C18"
+   ],
+   "reason": "Rule 11: 'we found' (C15) and 'we conclude' (C18, with 11.6) state the same named-lead assertion; replaced by C98 (F18)."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C22",
+    "C30"
+   ],
+   "reason": "Rule 11: 'we found' (C22) and 'we conclude' (C30, with 11.7) state the same satisfaction assertion; replaced by C99 (F27)."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C25",
+    "C26",
+    "C27",
+    "C31",
+    "C32"
+   ],
+   "reason": "Rule 11: the null outcome results are stated as found (C25-C27, p.9) and concluded (C31, C32, p.9 and 11.8); one row per outcome (rule 1, as in C25-C27): C100 HbA1c (F28), C101 blood pressure and weight (F29), C102 SF-12 (F30)."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C47",
+    "C52"
+   ],
+   "reason": "Rule 11: 'good psychometric properties' (C47, p.10) and 'excellent psychometric properties' (C52, p.11 and 11.9) are the same assertion on the professional questionnaire, not a summary of several claims; replaced by C103 (F47, F48, F49)."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "C17",
+    "C67"
+   ],
+   "reason": "Rule 11: 'experiences of continuity depend on the organisation of care' (p.8) and 'systematic differences between experiences of patients attending different provider organisations' (11.6) are the same summary assertion; replaced by C104 (rule 2, covers C13, C96, C98)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C96",
+    "C97"
+   ],
+   "reason": "Rule 11 merge with combined locations; rests_on is the union of the findings the text uses at the merged places (rules 3 and 7); Q and N roots, fit confirm."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C98",
+    "C99",
+    "C100",
+    "C101",
+    "C102",
+    "C103"
+   ],
+   "reason": "Rule 11 merge with combined locations; rests_on unchanged (single N finding, or F47-F49 for C103)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "C104"
+   ],
+   "reason": "Rule 11 merge of two summary rows; rule 2: empty rests_on, links recorded as covers (R46-R48)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "R1",
+    "R2",
+    "R3",
+    "R4",
+    "R11",
+    "R12",
+    "R18",
+    "R19",
+    "R20",
+    "R21",
+    "R22"
+   ],
+   "reason": "Covers: summary claims (rule 2)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "R42",
+    "R43",
+    "R45"
+   ],
+   "reason": "Covers as in R7, R8, R10, re-anchored on C92."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "R46",
+    "R47",
+    "R48",
+    "R49",
+    "R50",
+    "R51",
+    "R52",
+    "R53"
+   ],
+   "reason": "Covers re-anchored on the merged claims C96, C97, C98, C104 (colon p.8; 'For example' p.140; rule 2 p.10 and p.141)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "R27",
+    "R30"
+   ],
+   "reason": "Rule 10: backs marked in the text ('therefore' p.9/p.142; 'This points to' p.140)."
+  },
+  {
+   "action": "endorse",
+   "rows": [
+    "R54",
+    "R55",
+    "R56",
+    "R57",
+    "R58",
+    "R59",
+    "R60",
+    "R61"
+   ],
+   "reason": "Rule 10: backs as in R28, R29, R32-R34 (markers 'Whereas', 'A further reason why' p.99, 'Our data support' p.141, 'We conclude' p.142), re-anchored on C98 and C100-C102."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "R6",
+    "R7",
+    "R8",
+    "R9",
+    "R10"
+   ],
+   "reason": "Anchored on rejected C19, C39, C41; replaced by R47 (R6), R42, R43, R53 (R9), R45."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "R41",
+    "R44"
+   ],
+   "reason": "Anchored on C90 and C91, merged under rule 11 into C96 and C97; replaced by R47 and R53."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "R5",
+    "R23",
+    "R24"
+   ],
+   "reason": "Anchored on C17, C67, C18, C14, merged under rule 11; replaced by R46-R48."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "R14",
+    "R15",
+    "R16",
+    "R17"
+   ],
+   "reason": "Anchored on C55 and C56, merged under rule 11; replaced by R49-R52."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "R28",
+    "R29",
+    "R32",
+    "R33",
+    "R34"
+   ],
+   "reason": "Anchored on C18, C31, C32, merged under rule 11; replaced by R54-R61."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "R13"
+   ],
+   "reason": "Rule 11: C52 is the same claim as C47 (merged into C103); the relation would link a claim to its own repeat."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "R25",
+    "R26"
+   ],
+   "reason": "Rule 11: C76 and C77 are the same claims as C65 and C41 (merged into C95 and C92); the relation would link a claim to itself."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "R31",
+    "R35",
+    "R36",
+    "R37",
+    "R38",
+    "R39"
+   ],
+   "reason": "Rule 10: link shown only by sequence or repetition (11.4; Section 11 to recommendations 3, 5, 6, 8); no marker in the text."
+  },
+  {
+   "action": "reject",
+   "rows": [
+    "R40"
+   ],
+   "reason": "Rule 6: points to research-agenda claims C73 and C88."
+  }
+ ]
+}
